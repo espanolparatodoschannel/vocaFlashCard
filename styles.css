@@ -151,15 +151,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
     perspective: 1000px;
 }
 
 /* TARJETA (ENFOQUE MÓVIL) */
 .flashcard {
-    background: #ffffff;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     border-radius: 24px;
     box-shadow: var(--shadow);
@@ -173,7 +173,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: var(--transition);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
 }
 
@@ -183,6 +183,7 @@ body {
 
 .flashcard.fade-out {
     opacity: 0;
+    transform: translateY(30px) scale(0.95);
 }
 
 
@@ -209,11 +210,15 @@ body {
 
 /* TEXTOS (MÓVIL) */
 .word-fr {
-    color: var(--accent-color);
+    background: linear-gradient(135deg, var(--accent-color) 30%, #a855f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: var(--fs-title);
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     line-height: 1.1;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
 }
 
 .def-container {
@@ -276,32 +281,36 @@ body {
 
 /* CONTROLES (ENFOQUE TÁCTIL) */
 .controls {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Tres columnas en móvil */
-    gap: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
     width: 100%;
     padding: 0 10px;
 }
 
 .btn-action {
-    background: var(--glass-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
     color: var(--text-primary);
-    padding: 16px;
-    /* Touch padding */
-    border-radius: 18px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    padding: 10px;
+    font-size: 2.2rem;
     cursor: pointer;
-    transition: var(--transition);
-    box-shadow: var(--shadow);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+}
+
+.btn-action:hover {
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.btn-action:active {
+    transform: scale(0.95);
 }
 
 .btn-action span {
@@ -312,7 +321,7 @@ body {
 /* El botón aleatorio ya no ocupa todo el ancho */
 
 .counter {
-    margin-top: 10px;
+    margin-top: 0px;
     font-size: 0.85rem;
     color: var(--text-primary);
     font-weight: 600;
@@ -358,7 +367,7 @@ hr {
 
     .controls {
         display: flex;
-        grid-template-columns: none;
+        justify-content: center;
     }
 }
 
@@ -368,9 +377,9 @@ hr {
         --fs-title: 3.2rem;
     }
 
-    .flashcard:hover {
+/* .flashcard:hover {
         transform: translateY(-8px) scale(1.02);
-    }
+    } */
 
     .theme-toggle:hover {
         transform: rotate(15deg) scale(1.1);

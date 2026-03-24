@@ -137,7 +137,7 @@ function showCard(idx) {
         container.style.transform = '';
         container.classList.remove('fade-out');
         document.getElementById('counter').textContent = `${idx + 1} / ${flashcards.length}`;
-    }, 400);
+    }, 500);
 }
 
 function nextCard() {
