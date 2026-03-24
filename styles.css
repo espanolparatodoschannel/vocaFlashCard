@@ -321,13 +321,15 @@ body {
 /* El botón aleatorio ya no ocupa todo el ancho */
 
 .counter {
-    margin-top: 0px;
+    margin-top: auto;
+    margin-bottom: -10px; /* Ajuste fino para la base */
     font-size: 0.85rem;
     color: var(--text-primary);
     font-weight: 600;
     background: var(--glass-bg);
     padding: 4px 14px;
     border-radius: 20px;
+    opacity: 0.8;
 }
 
 hr {

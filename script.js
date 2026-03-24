@@ -133,6 +133,8 @@ function showCard(idx) {
             });
         }
 
+        html += `<div class="counter" id="counter">${idx + 1} / ${flashcards.length}</div>`;
+
         container.innerHTML = html;
         container.style.transform = '';
         container.classList.remove('fade-out');
