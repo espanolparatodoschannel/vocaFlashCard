@@ -1,17 +1,89 @@
 [
     {
-        "Término en francés": "À ce sujet",
+        "Término en francés": "Aborde",
         "categoría": "Conectores y Expresiones",
+        "verbo_infinitivo": "Aborder",
         "definiciones": [
             {
-                "Término en español": "Sobre este tema",
-                "Ejemplo en francés": "Le conseil d'administration a voté à ce sujet hier.",
-                "Ejemplo en español": "La junta directiva votó sobre este tema ayer."
+                "Término en español": "Abordar / Tratar",
+                "Ejemplo en francés": "Le professeur aborde un sujet complexe aujourd'hui.",
+                "Ejemplo en español": "Le profesor aborda un tema complejo hoy."
             },
             {
-                "Término en español": "Al respecto",
-                "Ejemplo en francés": "Je n'ai pas encore reçu de commentaires à ce sujet.",
-                "Ejemplo en español": "Aún no he recibido comentarios al respecto."
+                "Término en español": "Acercarse",
+                "Ejemplo en francés": "Il m'aborde toujours avec le sourire.",
+                "Ejemplo en español": "Él siempre se me acerca con una sonrisa."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Accueillir",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Acoger / Recibir",
+                "Ejemplo en francés": "Elle va accueillir les nouveaux étudiants à l'aéroport.",
+                "Ejemplo en español": "Ella va a recibir a los nuevos estudiantes en el aeropuerto."
+            },
+            {
+                "Término en español": "Dar la bienvenida",
+                "Ejemplo en francés": "L'hôtel est prêt à accueillir ses premiers clients.",
+                "Ejemplo en español": "El hotel está listo para dar la bienvenida a sus primeros clientes."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Affections",
+        "categoría": "Salud y Bienestar",
+        "definiciones": [
+            {
+                "Término en español": "Afecciones / Enfermedades",
+                "Ejemplo en francés": "Le médecin traite diverses affections respiratoires.",
+                "Ejemplo en español": "El médico trata diversas afecciones respiratorias."
+            },
+            {
+                "Término en español": "Afectos / Cariño",
+                "Ejemplo en francés": "Il garde de grandes affections pour sa ville natale.",
+                "Ejemplo en español": "Él guarda grandes afectos por su ciudad natal."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Afficher",
+        "categoría": "General",
+        "verbo_infinitivo": "Afficher",
+        "definiciones": [
+            {
+                "Término en español": "Mostrar / Exhibir",
+                "Ejemplo en francés": "L'ordinateur met du temps à afficher les résultats de la recherche.",
+                "Ejemplo en español": "El ordenador tarda en mostrar los resultados de la búsqueda."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Aiguille",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Aguja (f.)",
+                "Ejemplo en francés": "J'ai besoin d'un fil et d'une aiguille pour recoudre ce bouton.",
+                "Ejemplo en español": "Necesito hilo y una aguja para volver a coser este botón."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ailleurs",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "En otra parte / En otro lugar",
+                "Ejemplo en francés": "Si tu ne trouves pas ce livre ici, cherche ailleurs.",
+                "Ejemplo en español": "Si no encuentras este libro aquí, busca en otra parte."
+            },
+            {
+                "Término en español": "A otro lugar",
+                "Ejemplo en francés": "Ils ont décidé de partir vivre ailleurs.",
+                "Ejemplo en español": "Decidieron irse a vivir a otro lugar."
             }
         ]
     },
@@ -32,18 +104,114 @@
         ]
     },
     {
-        "Término en francés": "À tout moment",
-        "categoría": "Tiempo y Frecuencia",
+        "Término en francés": "Ancien",
+        "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "En cualquier momento",
-                "Ejemplo en francés": "Vous pouvez me contacter à tout moment si vous avez une question.",
-                "Ejemplo en español": "Puedes contactarme en cualquier momento si tienes una pregunta."
+                "Término en español": "Antiguo / Anterior",
+                "Ejemplo en francés": "C'est un ancien élève de notre établissement.",
+                "Ejemplo en español": "Es un antiguo alumno de nuestro establecimiento."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Apaise",
+        "categoría": "Salud y Bienestar",
+        "verbo_infinitivo": "Apaiser",
+        "definiciones": [
+            {
+                "Término en español": "Calmar / Apaciguar",
+                "Ejemplo en francés": "La musique douce apaise les bébés.",
+                "Ejemplo en español": "La música suave calma a los bebés."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Apaiser",
+        "categoría": "General",
+        "verbo_infinitivo": "Apaiser",
+        "definiciones": [
+            {
+                "Término en español": "Apaciguar / Calmar",
+                "Ejemplo en francés": "Il essaie d'apaiser la colère de son ami avec des excuses.",
+                "Ejemplo en español": "Él intenta apaciguar el enfado de su amigo con disculpas."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Aperçu",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Vistazo / Visión general",
+                "Ejemplo en francés": "Ce document donne un aperçu rapide du projet.",
+                "Ejemplo en español": "Este documento da una visión general rápida del proyecto."
             },
             {
-                "Término en español": "Todo el tiempo (menos común)",
-                "Ejemplo en francés": "Elle est à tout moment en train de réviser pour ses examens.",
-                "Ejemplo en español": "Ella está todo el tiempo repasando para sus exámenes."
+                "Término en español": "Vista previa",
+                "Ejemplo en francés": "Cliquez ici pour voir l'aperçu de votre document avant d'imprimer.",
+                "Ejemplo en español": "Haga clic aquí para ver la vista previa de su documento antes de imprimir."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Appoint",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Importe exacto / Cambio justo",
+                "Ejemplo en francés": "Le chauffeur de taxi préfère quand les clients font l'appoint.",
+                "Ejemplo en español": "El taxista prefiere que los clientes paguen con el importe exacto."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Approprié",
+        "categoría": "Trabajo y Negocios",
+        "definiciones": [
+            {
+                "Término en español": "Apropiado / Adecuado",
+                "Ejemplo en francés": "Il est important de porter une tenue appropriée pour l'entretien.",
+                "Ejemplo en español": "Es importante llevar una vestimenta adecuada para la entrevista."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Arriver à",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Lograr / Conseguir",
+                "Ejemplo en francés": "Je n'arrive pas à ouvrir ce bocal de confiture.",
+                "Ejemplo en español": "No logro abrir este bote de mermelada."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Atteint",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Atteindre",
+        "definiciones": [
+            {
+                "Término en español": "Alcanzado / Logrado",
+                "Ejemplo en francés": "L'objectif a été atteint avec succès.",
+                "Ejemplo en español": "El objetivo ha sido alcanzado con éxito."
+            },
+            {
+                "Término en español": "Afectado (por una enfermedad)",
+                "Ejemplo en francés": "Il est atteint d'une grippe sévère.",
+                "Ejemplo en español": "Él está afectado por una gripe severa."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Attitré",
+        "categoría": "Trabajo y Negocios",
+        "definiciones": [
+            {
+                "Término en español": "Designado, oficial, habitual",
+                "Ejemplo en francés": "Ce boulanger est le fournisseur attitré de la Présidence.",
+                "Ejemplo en español": "Este panadero es el proveedor designado de la Presidencia."
             }
         ]
     },
@@ -80,6 +248,38 @@
         ]
     },
     {
+        "Término en francés": "Au-delà",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Más allá",
+                "Ejemplo en francés": "Le sommet de la montagne est au-delà des nuages.",
+                "Ejemplo en español": "La cima de la montaña está más allá de las nubes."
+            },
+            {
+                "Término en español": "Trasciende (en sentido figurado)",
+                "Ejemplo en francés": "Son courage va bien au-delà de toute attente.",
+                "Ejemplo en español": "Su coraje va mucho más allá de cualquier expectativa."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Autour",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Alrededor",
+                "Ejemplo en francés": "Il y a beaucoup d'arbres autour de la maison.",
+                "Ejemplo en español": "Hay muchos árboles alrededor de la casa."
+            },
+            {
+                "Término en español": "En torno a",
+                "Ejemplo en francés": "La discussion tournait autour de ce projet.",
+                "Ejemplo en español": "La discusión giraba en torno a este proyecto."
+            }
+        ]
+    },
+    {
         "Término en francés": "Avant cela",
         "categoría": "Tiempo y Frecuencia",
         "definiciones": [
@@ -96,23 +296,74 @@
         ]
     },
     {
-        "Término en francés": "Au-delà",
-        "categoría": "Conectores y Expresiones",
+        "Término en francés": "Avoir affaire à",
+        "categoría": "Trabajo y Negocios",
         "definiciones": [
             {
-                "Término en español": "Más allá",
-                "Ejemplo en francés": "Le sommet de la montagne est au-delà des nuages.",
-                "Ejemplo en español": "La cima de la montaña está más allá de las nubes."
+                "Término en español": "Tratar con / Enfrentarse a",
+                "Ejemplo en francés": "Pour ce contrato, vous allez avoir affaire au directeur général.",
+                "Ejemplo en español": "Para este contrato, va a tratar con el director general."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Avoir l'air",
+        "categoría": "General",
+        "definiciones": [
+            {
+                "Término en español": "Parecer / Tener aspecto de",
+                "Ejemplo en francés": "Tu as l'air fatigué après cette longue journée de travail.",
+                "Ejemplo en español": "Pareces cansado después de este largo día de trabajo."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Baignade",
+        "categoría": "Cultura y Ocio",
+        "definiciones": [
+            {
+                "Término en español": "Baño / Acción de nadar",
+                "Ejemplo en francés": "La baignade est interdite sur cette plage aujourd'hui.",
+                "Ejemplo en español": "El baño está prohibido en esta playa hoy."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Bassin",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Cuenca / Estanque",
+                "Ejemplo en francés": "Les enfants jouent près du bassin au jardin public.",
+                "Ejemplo en español": "Los niños juegan cerca del estanque en el jardín público."
             },
             {
-                "Término en español": "Trasciende (en sentido figurado)",
-                "Ejemplo en francés": "Son courage va bien au-delà de toute attente.",
-                "Ejemplo en español": "Su coraje va mucho más allá de cualquier expectativa."
-            },
+                "Término en español": "Pelvis",
+                "Ejemplo en francés": "Elle s'est blessée au bassin en tombant.",
+                "Ejemplo en español": "Se lastimó la pelvis al caer."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Bruyant",
+        "categoría": "Transporte y Ciudad",
+        "definiciones": [
             {
-                "Término en español": "Más allá (Resultados/Expectativas)",
-                "Ejemplo en francés": "Ses résultats sont allés bien au-delà de nos espérances.",
-                "Ejemplo en español": "Sus resultados fueron mucho más allá de nuestras expectativas."
+                "Término en español": "Ruidoso",
+                "Ejemplo en francés": "Le centre-ville est très bruyant pendant les heures de pointe.",
+                "Ejemplo en español": "El centro de la ciudad es muy ruidoso durante las horas punta."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Bâille (bâiller)",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Bâiller",
+        "definiciones": [
+            {
+                "Término en español": "Bostezar",
+                "Ejemplo en francés": "Le professeur s'est arrêté quand il a vu que l'élève bâillait.",
+                "Ejemplo en español": "El profesor se detuvo cuando vio que el alumno bostezaba."
             }
         ]
     },
@@ -133,6 +384,99 @@
         ]
     },
     {
+        "Término en francés": "Celles",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Aquellas / Las que (femenino plural)",
+                "Ejemplo en francés": "Parmi toutes ces fleurs, celles-ci sont mes préférées.",
+                "Ejemplo en español": "Entre todas estas flores, aquellas son mis preferidas."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Celui-ci",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Este / Este de aquí",
+                "Ejemplo en francés": "Parmi tous ces livres, celui-ci est mon préféré.",
+                "Ejemplo en español": "De todos estos libros, este es mi preferido."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ceux",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Aquellos / Los que (masculino plural)",
+                "Ejemplo en francés": "Ceux qui n'ont pas de billet ne pourront pas entrer.",
+                "Ejemplo en español": "Aquellos que no tengan entrada no podrán entrar."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Collant",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Pegajoso / Medias (f. pl.)",
+                "Ejemplo en francés": "Tes mains sont collantes parce que tu as mangé des bonbons.",
+                "Ejemplo en español": "Tienes las manos pegajosas porque has comido caramelos."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Colle",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Pegamento (m.) / Cola (f.)",
+                "Ejemplo en francés": "Utilise de la colle forte pour réparer ce vase cassé.",
+                "Ejemplo en español": "Usa pegamento fuerte para reparar ese jarrón roto."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Collier",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Collar (m.)",
+                "Ejemplo en francés": "Elle porte un magnifique collier de perles pour la soirée.",
+                "Ejemplo en español": "Ella lleva un magnífico collar de perlas para la velada."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Coloré",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Colorido / Colorido",
+                "Ejemplo en francés": "Elle porte toujours un vêtement très coloré pour égayer sa journée.",
+                "Ejemplo en español": "Ella siempre lleva una prenda muy colorida para alegrar su día."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Combler",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Llenar / Rellenar",
+                "Ejemplo en francés": "Ils vont combler le fossé avec de la terre.",
+                "Ejemplo en español": "Van a rellenar la fosa con tierra."
+            },
+            {
+                "Término en español": "Satisfacer / Colmar",
+                "Ejemplo en francés": "Ce cadeau va combler ses attentes.",
+                "Ejemplo en español": "Este regalo va a colmar sus expectativas."
+            }
+        ]
+    },
+    {
         "Término en francés": "Comme d'habitude",
         "categoría": "Vida Diaria",
         "definiciones": [
@@ -140,6 +484,18 @@
                 "Término en español": "Como de costumbre",
                 "Ejemplo en francés": "Il est arrivé en retard, comme d'habitude.",
                 "Ejemplo en español": "Llegó tarde, como de costumbre."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Couler",
+        "categoría": "General",
+        "verbo_infinitivo": "Couler",
+        "definiciones": [
+            {
+                "Término en español": "Fluir / Correr / Hundirse",
+                "Ejemplo en francés": "Il adore écouter l'eau de la rivière couler doucement.",
+                "Ejemplo en español": "Le encanta escuchar el agua del río fluir suavemente."
             }
         ]
     },
@@ -160,19 +516,184 @@
         ]
     },
     {
-        "Término en francés": "Échoué à",
-        "categoría": "Trabajo y Negocios",
-        "verbo_infinitivo": "Échouer",
+        "Término en francés": "Crotte",
+        "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Fracasado en",
-                "Ejemplo en francés": "Le gouvernement a échoué à atteindre ses objectifs économiques.",
-                "Ejemplo en español": "El gobierno ha fracasado en alcanzar sus objetivos económicos."
+                "Término en español": "Excremento (f.) / ¡Mierda! (exclamación leve)",
+                "Ejemplo en francés": "Fais attention où tu marches, il y a une crotte de chien.",
+                "Ejemplo en español": "Ten cuidado por dónde pisas, hay un excremento de perro."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Cuit (cuire)",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Cuire",
+        "definiciones": [
+            {
+                "Término en español": "Cocinar / Cocer",
+                "Ejemplo en francés": "Le chef cuit la viande à basse température para guardar el jus.",
+                "Ejemplo en español": "El chef cocina la carne a baja temperatura para conservar el jugo."
+            }
+        ]
+    },
+    {
+        "Término en francés": "De plus",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Además",
+                "Ejemplo en francés": "Il est intelligent, de plus il est très travailleur.",
+                "Ejemplo en español": "Él es inteligente, además es muy trabajador."
             },
             {
-                "Término en español": "Varado en (para un barco o persona en un lugar)",
-                "Ejemplo en francés": "Le navire a échoué à cause de la tempête.",
-                "Ejemplo en español": "Le navío quedó varado a causa de la tormenta."
+                "Término en español": "Por otra parte",
+                "Ejemplo en francés": "La nourriture était bonne; de plus, l'ambiance était excellente.",
+                "Ejemplo en español": "La comida era buena; por otra parte, el ambiente era excelente."
+            }
+        ]
+    },
+    {
+        "Término en francés": "De sorte que",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "De modo que",
+                "Ejemplo en francés": "Il a plu toute la journée, de sorte que le match a été annulé.",
+                "Ejemplo en español": "Llovió todo el día, de modo que el partido fue cancelado."
+            },
+            {
+                "Término en español": "De manera que",
+                "Ejemplo en francés": "Il a parlé clairement de sorte que tout le monde comprenne.",
+                "Ejemplo en español": "Habló claramente de manera que todo el mundo entendiera."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Demeure",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Demeurer",
+        "definiciones": [
+            {
+                "Término en español": "Permanece / Se queda",
+                "Ejemplo en francés": "Le mystère demeure entier après l'enquête.",
+                "Ejemplo en español": "El misterio permanece intacto después de la investigación."
+            },
+            {
+                "Término en español": "Mansión / Residencia",
+                "Ejemplo en francés": "C'est une magnifique demeure du XIXe siècle.",
+                "Ejemplo en español": "Es una magnífica mansión del siglo XIX."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Devenu",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Devenir",
+        "definiciones": [
+            {
+                "Término en español": "Convertido / Llegado a ser",
+                "Ejemplo en francés": "Il est devenu un expert en informatique.",
+                "Ejemplo en español": "Él se ha convertido en un experto en informática."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Doux",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Dulce / Suave",
+                "Ejemplo en francés": "Cette écharpe en laine est vraiment très douce.",
+                "Ejemplo en español": "Esta bufanda de lana es realmente muy suave."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Drôle",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Divertido / Gracioso",
+                "Ejemplo en francés": "Ce film est vraiment très drôle.",
+                "Ejemplo en español": "Esta película es realmente muy divertida."
+            },
+            {
+                "Término en español": "Extraño / Raro",
+                "Ejemplo en francés": "C'est une drôle d'idée d'aller nager en hiver.",
+                "Ejemplo en español": "Es una idea extraña ir a nadar en invierno."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Débarquement",
+        "categoría": "Transporte y Ciudad",
+        "definiciones": [
+            {
+                "Término en español": "Desembarco",
+                "Ejemplo en francés": "Le débarquement des passagers a commencé à midi.",
+                "Ejemplo en español": "El desembarco de los pasajeros comenzó al mediodía."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Débarrasser",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Despejar / Quitar",
+                "Ejemplo en francés": "Peux-tu m'aider à débarrasser la table après le dîner ?",
+                "Ejemplo en español": "¿Puedes ayudarme a recoger la mesa después de la cena?"
+            }
+        ]
+    },
+    {
+        "Término en francés": "Déchiré",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Roto / Desgarrado",
+                "Ejemplo en francés": "Il a jeté son vieux pantalon qui était tout déchiré.",
+                "Ejemplo en español": "Tiró su pantalón viejo que estaba todo roto."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Défoncer",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Reventar / Destrozar",
+                "Ejemplo en francés": "Les pompiers ont dû défoncer la porte pour entrer.",
+                "Ejemplo en español": "Los bomberos tuvieron que reventar la puerta para entrar."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Dégager",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Despejar",
+                "Ejemplo en francés": "Les pompiers doivent dégager la route après l'accident.",
+                "Ejemplo en español": "Los bomberos deben despejar la carretera después del accidente."
+            },
+            {
+                "Término en español": "Emanar / Desprender",
+                "Ejemplo en francés": "Cette fleur dégage une odeur très agréable.",
+                "Ejemplo en español": "Esta flor desprende un olor muy agradable."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Déplorer",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Lamentar",
+                "Ejemplo en francés": "Le directeur déplore le manque de ponctualité.",
+                "Ejemplo en español": "El director lamenta la falta de puntualidad."
             }
         ]
     },
@@ -193,6 +714,18 @@
         ]
     },
     {
+        "Término en francés": "Empêcher",
+        "categoría": "General",
+        "verbo_infinitivo": "Empêcher",
+        "definiciones": [
+            {
+                "Término en español": "Impedir / Evitar",
+                "Ejemplo en francés": "La pluie ne doit pas nous empêcher de sortir nous promener.",
+                "Ejemplo en español": "La lluvia no debe impedirnos salir a pasear."
+            }
+        ]
+    },
+    {
         "Término en francés": "En mettant l'accent sur",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
@@ -205,6 +738,133 @@
                 "Término en español": "Haciendo hincapié en",
                 "Ejemplo en francés": "Il a présenté sa proposition en mettant l'accent sur l'importance de l'innovation.",
                 "Ejemplo en español": "Él presentó su propuesta haciendo hincapié en la importancia de la innovación."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Entouré",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Entourer",
+        "definiciones": [
+            {
+                "Término en español": "Rodeado",
+                "Ejemplo en francés": "Le château est entouré d'un magnifique jardin.",
+                "Ejemplo en español": "El castillo está rodeado de un jardín magnífico."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Essayer",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Probar / Intentar",
+                "Ejemplo en francés": "Tu devrais essayer cette nouvelle recette de cuisine.",
+                "Ejemplo en español": "Deberías probar esta nueva receta de cocina."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Eux",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Ellos (pronombre tónico)",
+                "Ejemplo en francés": "Je ne veux pas partir sans eux, ils sont mes meilleurs amis.",
+                "Ejemplo en español": "No quiero irme sin ellos, son mis mejores amigos."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Facultatif",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Opcional / Facultativo",
+                "Ejemplo en francés": "Le cours de dessin est facultatif pour les élèves de terminale.",
+                "Ejemplo en español": "La clase de dibujo es opcional para los alumnos de último año."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Frais",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Fresco / Reciente",
+                "Ejemplo en francés": "J'aime aller chercher du pain frais tous les matins.",
+                "Ejemplo en español": "Me gusta ir a buscar pan fresco todas las mañanas."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Frayeur",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Susto / Pavor",
+                "Ejemplo en francés": "J'ai eu une grande frayeur quand le chat a sauté.",
+                "Ejemplo en español": "Me llevé un gran susto cuando el gato saltó."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Glace",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Hielo (m.) / Helado (m.) / Espejo (m.)",
+                "Ejemplo en francés": "Voulez-vous un peu de glace dans votre boisson ?",
+                "Ejemplo en español": "¿Quiere un poco de hielo en su bebida?"
+            }
+        ]
+    },
+    {
+        "Término en francés": "Glissant",
+        "categoría": "Transporte y Ciudad",
+        "definiciones": [
+            {
+                "Término en español": "Resbaladizo",
+                "Ejemplo en francés": "Attention, le sol est mouillé et très glissant.",
+                "Ejemplo en español": "Cuidado, el suelo está mojado y muy resbaladizo."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Gourmand",
+        "categoría": "General",
+        "definiciones": [
+            {
+                "Término en español": "Goloso (masculino)",
+                "Ejemplo en francés": "Mon fils est très gourmand, il adore les pâtisseries.",
+                "Ejemplo en español": "Mi hijo es muy goloso, le encantan los dulces."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Gros",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Gordo / Grande",
+                "Ejemplo en francés": "Il y a un gros problème que nous devons résoudre rapidement.",
+                "Ejemplo en español": "Hay un gran problema que debemos resolver rápidamente."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Hâte",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Prisa",
+                "Ejemplo en francés": "J'ai hâte de te voir demain.",
+                "Ejemplo en español": "Tengo hâte (muchas ganas) de verte mañana."
+            },
+            {
+                "Término en español": "Precipitación",
+                "Ejemplo en francés": "Il a fait son travail avec trop de hâte.",
+                "Ejemplo en español": "Hizo su trabajo con demasiada precipitación."
             }
         ]
     },
@@ -225,6 +885,17 @@
         ]
     },
     {
+        "Término en francés": "Il n'y a plus",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Ya no hay",
+                "Ejemplo en francés": "Il n'y a plus de pain dans la cuisine.",
+                "Ejemplo en español": "Ya no hay pan en la cocina."
+            }
+        ]
+    },
+    {
         "Término en francés": "Inclure",
         "categoría": "Trabajo y Negocios",
         "definiciones": [
@@ -241,6 +912,17 @@
         ]
     },
     {
+        "Término en francés": "Interagir",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Interactuar",
+                "Ejemplo en francés": "Les enfants apprennent à interagir avec les autres à l'école.",
+                "Ejemplo en español": "Los niños aprenden a interactuar con los demás en la escuela."
+            }
+        ]
+    },
+    {
         "Término en francés": "Je me suis rendu compte (que/de)",
         "categoría": "Vida Diaria",
         "definiciones": [
@@ -248,6 +930,99 @@
                 "Término en español": "Me di cuenta (de que)",
                 "Ejemplo en francés": "Je me suis rendu compte que j'avais oublié mon portefeuille à la maison.",
                 "Ejemplo en español": "Me di cuenta de que había olvidado mi billetera en casa."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Je veux bien",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Acepto / Me gustaría",
+                "Ejemplo en francés": "Si tu as du café en trop, je veux bien une tasse.",
+                "Ejemplo en español": "Si te sobra café, acepto una taza."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Leur",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Su / Sus (de ellos/ellas)",
+                "Ejemplo en francés": "Les voisins ont repeint leur façade pendant l'été.",
+                "Ejemplo en español": "Los vecinos pintaron su fachada durante el verano."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Long",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Largo",
+                "Ejemplo en francés": "Le trajet en train a été plus long que prévu.",
+                "Ejemplo en español": "El trayecto en tren fue más largo de lo previsto."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Longueur",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Longitud / Largo",
+                "Ejemplo en francés": "Quelle est la longueur de cette table ?",
+                "Ejemplo en español": "¿Cuál es la longitud de esta mesa?"
+            },
+            {
+                "Término en español": "Duración / Extensión",
+                "Ejemplo en francés": "La longueur du film a fatigué les spectateurs.",
+                "Ejemplo en español": "La duración de la película cansó a los espectadores."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Lutins",
+        "categoría": "Cultura y Ocio",
+        "definiciones": [
+            {
+                "Término en español": "Duendes / Gnomos",
+                "Ejemplo en francés": "Les lutins aident le Père Noël à préparer les cadeaux.",
+                "Ejemplo en español": "Los duendes ayudan a Papá Noel a preparar los regalos."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Léger",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Ligero / Leve",
+                "Ejemplo en francés": "Ce bagage est très léger, je peux le porter facilement.",
+                "Ejemplo en español": "Este equipaje es muy ligero, puedo llevarlo fácilmente."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Malin",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Listo / Astuto",
+                "Ejemplo en francés": "Il a été assez malin pour trouver une solution originale.",
+                "Ejemplo en español": "Fue lo suficientemente astuto para encontrar una solución original."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Maniable",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Manejable",
+                "Ejemplo en francés": "Cette petite voiture est très maniable en ville.",
+                "Ejemplo en español": "Este coche pequeño es muy manejable en la ciudad."
             }
         ]
     },
@@ -291,6 +1066,17 @@
                 "Término en español": "A mí, lo que me sorprendió",
                 "Ejemplo en francés": "Moi, ce qui m'a étonnée, c'est la rapidité de sa réaction.",
                 "Ejemplo en español": "A mí, lo que me sorprendió, fue la rapidez de su reacción."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Même si",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Aunque / Aun si",
+                "Ejemplo en francés": "Je viendrai même s'il pleut.",
+                "Ejemplo en español": "Vendré aunque llueva."
             }
         ]
     },
@@ -399,6 +1185,28 @@
         ]
     },
     {
+        "Término en francés": "Nauséabond",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Nauseabundo / Maloliente",
+                "Ejemplo en francés": "Une odeur nauséabonde se dégageait de la vieille usine.",
+                "Ejemplo en español": "Un olor nauseabundo emanaba de la vieja fábrica."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Par la suite",
+        "categoría": "Tiempo y Frecuencia",
+        "definiciones": [
+            {
+                "Término en español": "Más tarde / Posteriormente",
+                "Ejemplo en francés": "Il a commencé comme stagiaire et est devenu directeur par la suite.",
+                "Ejemplo en español": "Empezó como pasante y posteriormente se convirtió en director."
+            }
+        ]
+    },
+    {
         "Término en francés": "Par rapport à",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
@@ -411,6 +1219,66 @@
                 "Término en español": "En comparación con",
                 "Ejemplo en francés": "Le coût est faible par rapport aux bénéfices attendus.",
                 "Ejemplo en español": "El costo es bajo en comparación con los beneficios esperados."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Parcourir",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Recorrer / Viajar por",
+                "Ejemplo en francés": "Nous avons parcouru tout le pays en train.",
+                "Ejemplo en español": "Recorrimos todo el país en tren."
+            },
+            {
+                "Término en español": "Echar un vistazo / Hojear",
+                "Ejemplo en francés": "Je vais parcourir ce document avant la réunion.",
+                "Ejemplo en español": "Voy a echar un vistazo a este documento antes de la reunión."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Pas cher",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Barato / Económico",
+                "Ejemplo en francés": "On a trouvé un petit restaurant pas cher près de la gare.",
+                "Ejemplo en español": "Encontramos un restaurante pequeño y barato cerca de la estación."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Performant",
+        "categoría": "Trabajo y Negocios",
+        "definiciones": [
+            {
+                "Término en español": "Eficiente / De alto rendimiento",
+                "Ejemplo en francés": "Nous avons besoin d'un ordinateur plus performant pour le montage vidéo.",
+                "Ejemplo en español": "Necesitamos un ordenador más eficiente para el montaje de vídeo."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Plat",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Plato (m.) / Plano (adj.)",
+                "Ejemplo en francés": "La Terre n'est pas plate, mais ce terrain l'est.",
+                "Ejemplo en español": "La Tierra no es plana, pero este terreno sí lo es."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Pointu",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Puntiagudo",
+                "Ejemplo en francés": "Fais attention avec ce couteau, le bout est très pointu.",
+                "Ejemplo en español": "Ten cuidado con ese cuchillo, la punta es muy puntiaguda."
             }
         ]
     },
@@ -447,6 +1315,22 @@
         ]
     },
     {
+        "Término en francés": "Quand même",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "De todos modos / Aun así",
+                "Ejemplo en francés": "Il pleut, mais je vais sortir quand même.",
+                "Ejemplo en español": "Está lloviendo, pero voy a salir de todos modos."
+            },
+            {
+                "Término en español": "¡Por fin! / ¡Vaya!",
+                "Ejemplo en francés": "Tu es arrivé ! Quand même !",
+                "Ejemplo en español": "¡Llegaste! ¡Ya era hora!"
+            }
+        ]
+    },
+    {
         "Término en francés": "Quart de travail",
         "categoría": "Trabajo y Negocios",
         "definiciones": [
@@ -454,6 +1338,39 @@
                 "Término en español": "Turno de trabajo",
                 "Ejemplo en francés": "Mon quart de travail se termine à 17 heures.",
                 "Ejemplo en español": "Mi turno de trabajo termina a las 5 de la tarde."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Quiconque",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Cualquiera / Quienquiera (pronombre)",
+                "Ejemplo en francés": "Quiconque enfreint les règles sera sanctionné.",
+                "Ejemplo en español": "Cualquiera que infrinja las normas será sancionado."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Raconter",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Contar / Relatar",
+                "Ejemplo en francés": "Elle adore raconter des histoires à ses petits-enfants.",
+                "Ejemplo en español": "A ella le encanta contar historias a sus nietos."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Rassembler",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Reunir / Juntar",
+                "Ejemplo en francés": "Il faut rassembler tous les documents avant la réunion.",
+                "Ejemplo en español": "Hay que reunir todos los documentos antes de la reunión."
             }
         ]
     },
@@ -474,6 +1391,17 @@
         ]
     },
     {
+        "Término en francés": "Rentrée",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Inicio del curso escolar / Regreso",
+                "Ejemplo en francés": "La rentrée des classes a lieu chaque année en septembre.",
+                "Ejemplo en español": "El inicio del curso escolar tiene lugar cada año en septiembre."
+            }
+        ]
+    },
+    {
         "Término en francés": "Repose sur",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
@@ -486,6 +1414,17 @@
                 "Término en español": "Depende de",
                 "Ejemplo en francés": "La décision repose sur le vote de tous les membres.",
                 "Ejemplo en español": "La decisión depende del voto de todos los miembros."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ressembler",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Parecerse",
+                "Ejemplo en francés": "Il ressemble beaucoup à son père quand il sourit.",
+                "Ejemplo en español": "Él se parece mucho a su padre cuando sonríe."
             }
         ]
     },
@@ -507,302 +1446,35 @@
         ]
     },
     {
-        "Término en francés": "S'appuyer",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Apoyarse (físicamente o moralmente)",
-                "Ejemplo en francés": "Le cycliste doit s'appuyer sur ses genoux pour monter la côte.",
-                "Ejemplo en español": "El cyclista debe apoyarse en sus rodillas para subir la cuesta."
-            },
-            {
-                "Término en español": "Basarse en",
-                "Ejemplo en francés": "Notre argumentation doit s'appuyer sur des faits solides.",
-                "Ejemplo en español": "Nuestra argumentación debe basarse en hechos sólidos."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Tout de suite",
-        "categoría": "Tiempo y Frecuencia",
-        "definiciones": [
-            {
-                "Término en español": "Enseguida / Inmediatamente",
-                "Ejemplo en francés": "Veuillez me contacter tout de suite après votre arrivée.",
-                "Ejemplo en español": "Por favor, póngase en contacto conmigo enseguida después de su llegada."
-            }
-        ]
-    },
-    {
-        "Término en francés": "De sorte que",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "De modo que",
-                "Ejemplo en francés": "Il a plu toute la journée, de sorte que le match a été annulé.",
-                "Ejemplo en español": "Llovió todo el día, de modo que el partido fue cancelado."
-            },
-            {
-                "Término en español": "De manera que",
-                "Ejemplo en francés": "Il a parlé clairement de sorte que tout le monde comprenne.",
-                "Ejemplo en español": "Habló claramente de manera que todo el mundo entendiera."
-            }
-        ]
-    },
-    {
-        "Término en francés": "De plus",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Además",
-                "Ejemplo en francés": "Il est intelligent, de plus il est très travailleur.",
-                "Ejemplo en español": "Él es inteligente, además es muy trabajador."
-            },
-            {
-                "Término en español": "Por otra parte",
-                "Ejemplo en francés": "La nourriture était bonne; de plus, l'ambiance était excellente.",
-                "Ejemplo en español": "La comida era buena; por otra parte, el ambiente era excelente."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Accueillir",
+        "Término en francés": "Rigole",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Acoger / Recibir",
-                "Ejemplo en francés": "Elle va accueillir les nouveaux étudiants à l'aéroport.",
-                "Ejemplo en español": "Ella va a recibir a los nuevos estudiantes en el aeropuerto."
-            },
-            {
-                "Término en español": "Dar la bienvenida",
-                "Ejemplo en francés": "L'hôtel est prêt à accueillir ses premiers clients.",
-                "Ejemplo en español": "El hotel está listo para dar la bienvenida a sus primeros clientes."
+                "Término en español": "Zanja (f.) / Desagüe (m.) / Canaleta (f.)",
+                "Ejemplo en francés": "L'eau de pluie s'écoule rapidement dans la rigole.",
+                "Ejemplo en español": "El agua de lluvia fluye rápidamente por la canaleta."
             }
         ]
     },
     {
-        "Término en francés": "Interagir",
+        "Término en francés": "Rond",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Interactuar",
-                "Ejemplo en francés": "Les enfants apprennent à interagir avec les autres à l'école.",
-                "Ejemplo en español": "Los niños aprenden a interactuar con los demás en la escuela."
+                "Término en español": "Redondo",
+                "Ejemplo en francés": "Nous avons acheté une table ronde pour la salle à manger.",
+                "Ejemplo en español": "Compramos una mesa redonda para el comedor."
             }
         ]
     },
     {
-        "Término en francés": "Ailleurs",
-        "categoría": "Vida Diaria",
+        "Término en francés": "Roteux",
+        "categoría": "Quebequismos",
         "definiciones": [
             {
-                "Término en español": "En otra parte / En otro lugar",
-                "Ejemplo en francés": "Si tu ne trouves pas ce livre ici, cherche ailleurs.",
-                "Ejemplo en español": "Si no encuentras este libro aquí, busca en otra parte."
-            },
-            {
-                "Término en español": "A otro lugar",
-                "Ejemplo en francés": "Ils ont décidé de partir vivre ailleurs.",
-                "Ejemplo en español": "Decidieron irse a vivir a otro lugar."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Aperçu",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Vistazo / Visión general",
-                "Ejemplo en francés": "Ce document donne un aperçu rapide du projet.",
-                "Ejemplo en español": "Este documento da una visión general rápida del proyecto."
-            },
-            {
-                "Término en español": "Vista previa",
-                "Ejemplo en francés": "Cliquez ici pour voir l'aperçu de votre document avant d'imprimer.",
-                "Ejemplo en español": "Haga clic aquí para ver la vista previa de su documento antes de imprimir."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Combler",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Llenar / Rellenar",
-                "Ejemplo en francés": "Ils vont combler le fossé avec de la terre.",
-                "Ejemplo en español": "Van a rellenar la fosa con tierra."
-            },
-            {
-                "Término en español": "Satisfacer / Colmar",
-                "Ejemplo en francés": "Ce cadeau va combler ses attentes.",
-                "Ejemplo en español": "Este regalo va a colmar sus expectativas."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Quand même",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "De todos modos / Aun así",
-                "Ejemplo en francés": "Il pleut, mais je vais sortir quand même.",
-                "Ejemplo en español": "Está lloviendo, pero voy a salir de todos modos."
-            },
-            {
-                "Término en español": "¡Por fin! / ¡Vaya!",
-                "Ejemplo en francés": "Tu es arrivé ! Quand même !",
-                "Ejemplo en español": "¡Llegaste! ¡Ya era hora!"
-            }
-        ]
-    },
-    {
-        "Término en francés": "Par la suite",
-        "categoría": "Tiempo y Frecuencia",
-        "definiciones": [
-            {
-                "Término en español": "Más tarde / Posteriormente",
-                "Ejemplo en francés": "Il a commencé comme stagiaire et est devenu directeur par la suite.",
-                "Ejemplo en español": "Empezó como pasante y posteriormente se convirtió en director."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Devenu",
-        "categoría": "Vida Diaria",
-        "verbo_infinitivo": "Devenir",
-        "definiciones": [
-            {
-                "Término en español": "Convertido / Llegado a ser",
-                "Ejemplo en francés": "Il est devenu un expert en informatique.",
-                "Ejemplo en español": "Él se ha convertido en un experto en informática."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Demeure",
-        "categoría": "Vida Diaria",
-        "verbo_infinitivo": "Demeurer",
-        "definiciones": [
-            {
-                "Término en español": "Permanece / Se queda",
-                "Ejemplo en francés": "Le mystère demeure entier après l'enquête.",
-                "Ejemplo en español": "El misterio permanece intacto después de la investigación."
-            },
-            {
-                "Término en español": "Mansión / Residencia",
-                "Ejemplo en francés": "C'est une magnifique demeure du XIXe siècle.",
-                "Ejemplo en español": "Es una magnífica mansión del siglo XIX."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Parcourir",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Recorrer / Viajar por",
-                "Ejemplo en francés": "Nous avons parcouru tout le pays en train.",
-                "Ejemplo en español": "Recorrimos todo el país en tren."
-            },
-            {
-                "Término en español": "Echar un vistazo / Hojear",
-                "Ejemplo en francés": "Je vais parcourir ce document avant la réunion.",
-                "Ejemplo en español": "Voy a echar un vistazo a este documento antes de la reunión."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Même si",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Aunque / Aun si",
-                "Ejemplo en francés": "Je viendrai même s'il pleut.",
-                "Ejemplo en español": "Vendré aunque llueva."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Il n'y a plus",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Ya no hay",
-                "Ejemplo en francés": "Il n'y a plus de pain dans la cuisine.",
-                "Ejemplo en español": "Ya no hay pan en la cocina."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Sembler",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Parecer",
-                "Ejemplo en francés": "Cette solution semble être la meilleure.",
-                "Ejemplo en español": "Esta solución parece ser la mejor."
-            }
-        ]
-    },
-    {
-        "Término en francés": "S'agir de",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Tratarse de",
-                "Ejemplo en francés": "Il s'agit d'une erreur de compréhension.",
-                "Ejemplo en español": "Se trata de un error de comprensión."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Déplorer",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Lamentar",
-                "Ejemplo en francés": "Le directeur déplore le manque de ponctualité.",
-                "Ejemplo en español": "El director lamenta la falta de puntualidad."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Attitré",
-        "categoría": "Trabajo y Negocios",
-        "definiciones": [
-            {
-                "Término en español": "Designado, oficial, habitual",
-                "Ejemplo en francés": "Ce boulanger est le fournisseur attitré de la Présidence.",
-                "Ejemplo en español": "Este panadero es el proveedor designado de la Presidencia."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Élu",
-        "categoría": "Vida Diaria",
-        "verbo_infinitivo": "Élire",
-        "definiciones": [
-            {
-                "Término en español": "Elegido / Electo",
-                "Ejemplo en francés": "Il a été élu président l'année dernière.",
-                "Ejemplo en español": "Fue elegido presidente el año pasado."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Autour",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Alrededor",
-                "Ejemplo en francés": "Il y a beaucoup d'arbres autour de la maison.",
-                "Ejemplo en español": "Hay muchos árboles alrededor de la casa."
-            },
-            {
-                "Término en español": "En torno a",
-                "Ejemplo en francés": "La discussion tournait autour de ce projet.",
-                "Ejemplo en español": "La discusión giraba en torno a este proyecto."
+                "Término en español": "Hot-dog (Jerga de Quebec)",
+                "Ejemplo en francés": "On va manger deux roteux après le match.",
+                "Ejemplo en español": "Vamos a comer dos hot-dogs después del partido."
             }
         ]
     },
@@ -823,13 +1495,121 @@
         ]
     },
     {
-        "Término en francés": "Tenter",
+        "Término en francés": "Réfléchissant",
+        "categoría": "Transporte y Ciudad",
+        "definiciones": [
+            {
+                "Término en español": "Reflectante / Reflexivo",
+                "Ejemplo en francés": "Les cyclistes doivent porter un gilet réfléchissant la nuit.",
+                "Ejemplo en español": "Los cyclistas deben llevar un chaleco reflectante por la noche."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Réveil",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Intentar / Tentar",
-                "Ejemplo en francés": "Je vais tenter de résoudre ce problème avant demain.",
-                "Ejemplo en español": "Voy a intentar resolver este problema antes de mañana."
+                "Término en español": "Despertador (masculino)",
+                "Ejemplo en francés": "J'ai oublié de régler mon réveil hier soir.",
+                "Ejemplo en español": "Olvidé programar mi despertador anoche."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Réveille (se réveiller)",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Se réveiller",
+        "definiciones": [
+            {
+                "Término en español": "Despertarse",
+                "Ejemplo en francés": "En vacances, elle se réveille naturellement sans alarme.",
+                "Ejemplo en español": "En vacaciones, ella se despierta de forma natural sin alarma."
+            }
+        ]
+    },
+    {
+        "Término en francés": "S'afficher",
+        "categoría": "General",
+        "verbo_infinitivo": "Afficher",
+        "definiciones": [
+            {
+                "Término en español": "Aparecer / Mostrarse",
+                "Ejemplo en francés": "Un message d'erreur vient de s'afficher sur mon bureau.",
+                "Ejemplo en español": "Acaba de aparecer un mensaje de error en mi escritorio."
+            }
+        ]
+    },
+    {
+        "Término en francés": "S'agir de",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Tratarse de",
+                "Ejemplo en francés": "Il s'agit d'une erreur de compréhension.",
+                "Ejemplo en español": "Se trata de un error de comprensión."
+            }
+        ]
+    },
+    {
+        "Término en francés": "S'appuyer",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Apoyarse (físicamente o moralmente)",
+                "Ejemplo en francés": "Le cycliste doit s'appuyer sur ses genoux pour monter la côte.",
+                "Ejemplo en español": "El cyclista debe apoyarse en sus rodillas para subir la cuesta."
+            },
+            {
+                "Término en español": "Basarse en",
+                "Ejemplo en francés": "Notre argumentation doit s'appuyer sur des faits solides.",
+                "Ejemplo en español": "Nuestra argumentación debe basarse en hechos sólidos."
+            }
+        ]
+    },
+    {
+        "Término en francés": "S'envoler",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Echar a volar / Salir volando",
+                "Ejemplo en francés": "Avec ce vent fort, mon chapeau risque de s'envoler.",
+                "Ejemplo en español": "Con este viento tan fuerte, mi sombrero corre el riesgo de salir volando."
+            }
+        ]
+    },
+    {
+        "Término en francés": "S'étirer",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "S'étirer",
+        "definiciones": [
+            {
+                "Término en español": "Estirarse",
+                "Ejemplo en francés": "Il est conseillé de s'étirer après une séance de course à pied.",
+                "Ejemplo en español": "Es aconsejable estirarse después de una sesión de carrera."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Sautiller",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Corretear / Dar saltitos",
+                "Ejemplo en francés": "L'enfant s'est mis à sautiller de joie en voyant le cadeau.",
+                "Ejemplo en español": "El niño empezó a dar saltitos de alegría al ver el regalo."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Se débarrasser de",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Se débarrasser de",
+        "definiciones": [
+            {
+                "Término en español": "Deshacerse de / Librarse de",
+                "Ejemplo en francés": "Il est temps de se débarrasser de ces vieux vêtements.",
+                "Ejemplo en español": "Es hora de deshacerse de esa ropa vieja."
             }
         ]
     },
@@ -850,62 +1630,25 @@
         ]
     },
     {
-        "Término en francés": "Longueur",
-        "categoría": "Vida Diaria",
+        "Término en francés": "Sembler",
+        "categoría": "Conectores y Expresiones",
         "definiciones": [
             {
-                "Término en español": "Longitud / Largo",
-                "Ejemplo en francés": "Quelle est la longueur de cette table ?",
-                "Ejemplo en español": "¿Cuál es la longitud de esta mesa?"
-            },
-            {
-                "Término en español": "Duración / Extensión",
-                "Ejemplo en francés": "La longueur du film a fatigué les spectateurs.",
-                "Ejemplo en español": "La duración de la película cansó a los espectadores."
+                "Término en español": "Parecer",
+                "Ejemplo en francés": "Cette solution semble être la meilleure.",
+                "Ejemplo en español": "Esta solución parece ser la mejor."
             }
         ]
     },
     {
-        "Término en francés": "Atteint",
+        "Término en francés": "Sent (sentir)",
         "categoría": "Vida Diaria",
-        "verbo_infinitivo": "Atteindre",
+        "verbo_infinitivo": "Sentir",
         "definiciones": [
             {
-                "Término en español": "Alcanzado / Logrado",
-                "Ejemplo en francés": "L'objectif a été atteint avec succès.",
-                "Ejemplo en español": "El objetivo ha sido alcanzado con éxito."
-            },
-            {
-                "Término en español": "Afectado (por una enfermedad)",
-                "Ejemplo en francés": "Il est atteint d'une grippe sévère.",
-                "Ejemplo en español": "Él está afectado por una gripe severa."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Dégager",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Despejar",
-                "Ejemplo en francés": "Les pompiers doivent dégager la route après l'accident.",
-                "Ejemplo en español": "Los bomberos deben despejar la carretera después del accidente."
-            },
-            {
-                "Término en español": "Emanar / Desprender",
-                "Ejemplo en francés": "Cette fleur dégage une odeur très agréable.",
-                "Ejemplo en español": "Esta flor desprende un olor muy agradable."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Débarquement",
-        "categoría": "Transporte y Ciudad",
-        "definiciones": [
-            {
-                "Término en español": "Desembarco",
-                "Ejemplo en francés": "Le débarquement des passagers a commencé à midi.",
-                "Ejemplo en español": "El desembarco de los pasajeros comenzó al mediodía."
+                "Término en español": "Sentir / Oler",
+                "Ejemplo en francés": "Cette bougie parfumée sent la vanille et la cannelle.",
+                "Ejemplo en español": "Esta vela aromática huele a vainilla y canela."
             }
         ]
     },
@@ -922,150 +1665,13 @@
         ]
     },
     {
-        "Término en francés": "Apaise",
-        "categoría": "Salud y Bienestar",
-        "verbo_infinitivo": "Apaiser",
-        "definiciones": [
-            {
-                "Término en español": "Calmar / Apaciguar",
-                "Ejemplo en francés": "La musique douce apaise les bébés.",
-                "Ejemplo en español": "La música suave calma a los bebés."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Bassin",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Cuenca / Estanque",
-                "Ejemplo en francés": "Les enfants jouent près du bassin au jardin public.",
-                "Ejemplo en español": "Los niños juegan cerca del estanque en el jardín público."
-            },
-            {
-                "Término en español": "Pelvis",
-                "Ejemplo en francés": "Elle s'est blessée au bassin en tombant.",
-                "Ejemplo en español": "Se lastimó la pelvis al caer."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Lutins",
-        "categoría": "Cultura y Ocio",
-        "definiciones": [
-            {
-                "Término en español": "Duendes / Gnomos",
-                "Ejemplo en francés": "Les lutins aident le Père Noël à préparer les cadeaux.",
-                "Ejemplo en español": "Los duendes ayudan a Papá Noel a preparar los regalos."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Transmettre",
+        "Término en francés": "Souligner",
         "categoría": "Trabajo y Negocios",
         "definiciones": [
             {
-                "Término en español": "Transmitir",
-                "Ejemplo en francés": "Il est important de transmettre nos traditions aux enfants.",
-                "Ejemplo en español": "Es importante transmitir nuestras tradiciones a los niños."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Hâte",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Prisa",
-                "Ejemplo en francés": "J'ai hâte de te voir demain.",
-                "Ejemplo en español": "Tengo hâte (muchas ganas) de verte mañana."
-            },
-            {
-                "Término en español": "Precipitación",
-                "Ejemplo en francés": "Il a fait son travail avec trop de hâte.",
-                "Ejemplo en español": "Hizo su trabajo con demasiada precipitación."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Baignade",
-        "categoría": "Cultura y Ocio",
-        "definiciones": [
-            {
-                "Término en español": "Baño / Acción de nadar",
-                "Ejemplo en francés": "La baignade est interdite sur cette plage aujourd'hui.",
-                "Ejemplo en español": "El baño está prohibido en esta playa hoy."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Verti",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Vértigo (forma abreviada/jerga)",
-                "Ejemplo en francés": "J'ai eu un petit verti en regardant en bas.",
-                "Ejemplo en español": "Me dio un pequeño vértigo al mirar hacia abajo."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Drôle",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Divertido / Gracioso",
-                "Ejemplo en francés": "Ce film est vraiment très drôle.",
-                "Ejemplo en español": "Esta película es realmente muy divertida."
-            },
-            {
-                "Término en español": "Extraño / Raro",
-                "Ejemplo en francés": "C'est une drôle d'idée d'aller nager en hiver.",
-                "Ejemplo en español": "Es una idea extraña ir a nadar en invierno."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Affections",
-        "categoría": "Salud y Bienestar",
-        "definiciones": [
-            {
-                "Término en español": "Afecciones / Enfermedades",
-                "Ejemplo en francés": "Le médecin traite diverses affections respiratoires.",
-                "Ejemplo en español": "El médico trata diversas afecciones respiratorias."
-            },
-            {
-                "Término en español": "Afectos / Cariño",
-                "Ejemplo en francés": "Il garde de grandes affections pour sa ville natale.",
-                "Ejemplo en español": "Él guarda grandes afectos por su ciudad natal."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Aborde",
-        "categoría": "Conectores y Expresiones",
-        "verbo_infinitivo": "Aborder",
-        "definiciones": [
-            {
-                "Término en español": "Abordar / Tratar",
-                "Ejemplo en francés": "Le professeur aborde un sujet complexe aujourd'hui.",
-                "Ejemplo en español": "Le profesor aborda un tema complejo hoy."
-            },
-            {
-                "Término en español": "Acercarse",
-                "Ejemplo en francés": "Il m'aborde toujours avec le sourire.",
-                "Ejemplo en español": "Él siempre se me acerca con una sonrisa."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Toasté",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Tostado",
-                "Ejemplo en francés": "J'aime manger du pain bien toasté le matin.",
-                "Ejemplo en español": "Me gusta comer pan bien tostado por la mañana."
+                "Término en español": "Subrayar / Destacar",
+                "Ejemplo en francés": "Le professeur a voulu souligner l'importance de la grammaire.",
+                "Ejemplo en español": "El profesor quiso destacar la importancia de la gramática."
             }
         ]
     },
@@ -1081,28 +1687,6 @@
         ]
     },
     {
-        "Término en francés": "Roteux",
-        "categoría": "Quebequismos",
-        "definiciones": [
-            {
-                "Término en español": "Hot-dog (Jerga de Quebec)",
-                "Ejemplo en francés": "On va manger deux roteux après le match.",
-                "Ejemplo en español": "Vamos a comer dos hot-dogs después del partido."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Frayeur",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Susto / Pavor",
-                "Ejemplo en francés": "J'ai eu une grande frayeur quand le chat a sauté.",
-                "Ejemplo en español": "Me llevé un gran susto cuando el gato saltó."
-            }
-        ]
-    },
-    {
         "Término en francés": "Tempête",
         "categoría": "Vida Diaria",
         "definiciones": [
@@ -1114,266 +1698,47 @@
         ]
     },
     {
-        "Término en francés": "Verrouillage",
+        "Término en francés": "Tenter",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Bloqueo / Cierre",
-                "Ejemplo en francés": "Le verrouillage automatique des portes est activé.",
-                "Ejemplo en español": "El bloqueo automático de las puertas está activado."
+                "Término en español": "Intentar / Tentar",
+                "Ejemplo en francés": "Je vais tenter de résoudre ce problème avant demain.",
+                "Ejemplo en español": "Voy a intentar resolver este problema antes de mañana."
             }
         ]
     },
     {
-        "Término en francés": "Ressembler",
-        "categoría": "Conectores y Expresiones",
+        "Término en francés": "Tire (tirer)",
+        "categoría": "General",
+        "verbo_infinitivo": "Tirer",
         "definiciones": [
             {
-                "Término en español": "Parecerse",
-                "Ejemplo en francés": "Il ressemble beaucoup à son père quand il sourit.",
-                "Ejemplo en español": "Él se parece mucho a su padre cuando sonríe."
+                "Término en español": "Tirar / Jalar / Correr (cortinas)",
+                "Ejemplo en francés": "Il faut tirer la poignée pour ouvrir cette porte blindée.",
+                "Ejemplo en español": "Hay que tirar del picaporte para abrir esta puerta blindada."
             }
         ]
     },
     {
-        "Término en francés": "Essayer",
+        "Término en francés": "Toasté",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Probar / Intentar",
-                "Ejemplo en francés": "Tu devrais essayer cette nouvelle recette de cuisine.",
-                "Ejemplo en español": "Deberías probar esta nueva receta de cocina."
+                "Término en español": "Tostado",
+                "Ejemplo en francés": "J'aime manger du pain bien toasté le matin.",
+                "Ejemplo en español": "Me gusta comer pan bien tostado por la mañana."
             }
         ]
     },
     {
-        "Término en francés": "À l'occasion de",
-        "categoría": "Conectores y Expresiones",
+        "Término en francés": "Tout de suite",
+        "categoría": "Tiempo y Frecuencia",
         "definiciones": [
             {
-                "Término en español": "Con motivo de / Con ocasión de",
-                "Ejemplo en francés": "Nous organisons une fête à l'occasion de son anniversaire.",
-                "Ejemplo en español": "Estamos organizando una fiesta con motivo de su cumpleaños."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Ça alors",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "¡Vaya! / ¡No me digas!",
-                "Ejemplo en francés": "Ça alors ! Je ne m'attendais pas du tout à te voir ici.",
-                "Ejemplo en español": "¡Vaya! No esperaba para nada verte aquí."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Sautiller",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Corretear / Dar saltitos",
-                "Ejemplo en francés": "L'enfant s'est mis à sautiller de joie en voyant le cadeau.",
-                "Ejemplo en español": "El niño empezó a dar saltitos de alegría al ver el regalo."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Souligner",
-        "categoría": "Trabajo y Negocios",
-        "definiciones": [
-            {
-                "Término en español": "Subrayar / Destacar",
-                "Ejemplo en francés": "Le professeur a voulu souligner l'importance de la grammaire.",
-                "Ejemplo en español": "El profesor quiso destacar la importancia de la gramática."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Facultatif",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Opcional / Facultativo",
-                "Ejemplo en francés": "Le cours de dessin est facultatif pour les élèves de terminale.",
-                "Ejemplo en español": "La clase de dibujo es opcional para los alumnos de último año."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Raconter",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Contar / Relatar",
-                "Ejemplo en francés": "Elle adore raconter des histoires à ses petits-enfants.",
-                "Ejemplo en español": "A ella le encanta contar historias a sus nietos."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Crotte",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Excremento (f.) / ¡Mierda! (exclamación leve)",
-                "Ejemplo en francés": "Fais attention où tu marches, il y a une crotte de chien.",
-                "Ejemplo en español": "Ten cuidado por dónde pisas, hay un excremento de perro."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Bruyant",
-        "categoría": "Transporte y Ciudad",
-        "definiciones": [
-            {
-                "Término en español": "Ruidoso",
-                "Ejemplo en francés": "Le centre-ville est très bruyant pendant les heures de pointe.",
-                "Ejemplo en español": "El centro de la ciudad es muy ruidoso durante las horas punta."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Aiguille",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Aguja (f.)",
-                "Ejemplo en francés": "J'ai besoin d'un fil et d'une aiguille pour recoudre ce bouton.",
-                "Ejemplo en español": "Necesito hilo y una aguja para volver a coser este botón."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Maniable",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Manejable",
-                "Ejemplo en francés": "Cette petite voiture est très maniable en ville.",
-                "Ejemplo en español": "Este coche pequeño es muy manejable en la ciudad."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Pointu",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Puntiagudo",
-                "Ejemplo en francés": "Fais attention avec ce couteau, le bout est très pointu.",
-                "Ejemplo en español": "Ten cuidado con ese cuchillo, la punta es muy puntiaguda."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Épais",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Espeso / Grueso",
-                "Ejemplo en francés": "En hiver, je porte toujours un pull en laine très épais.",
-                "Ejemplo en español": "En invierno, siempre llevo un jersey de lana muy grueso."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Gros",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Gordo / Grande",
-                "Ejemplo en francés": "Il y a un gros problème que nous devons résoudre rapidement.",
-                "Ejemplo en español": "Hay un gran problema que debemos resolver rápidamente."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Rond",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Redondo",
-                "Ejemplo en francés": "Nous avons acheté une table ronde pour la salle à manger.",
-                "Ejemplo en español": "Compramos una mesa redonda para el comedor."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Nauséabond",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Nauseabundo / Maloliente",
-                "Ejemplo en francés": "Une odeur nauséabonde se dégageait de la vieille usine.",
-                "Ejemplo en español": "Un olor nauseabundo emanaba de la vieja fábrica."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Ancien",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Antiguo / Anterior",
-                "Ejemplo en francés": "C'est un ancien élève de notre établissement.",
-                "Ejemplo en español": "Es un antiguo alumno de nuestro establecimiento."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Collier",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Collar (m.)",
-                "Ejemplo en francés": "Elle porte un magnifique collier de perles pour la soirée.",
-                "Ejemplo en español": "Ella lleva un magnífico collar de perlas para la velada."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Long",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Largo",
-                "Ejemplo en francés": "Le trajet en train a été plus long que prévu.",
-                "Ejemplo en español": "El trayecto en tren fue más largo de lo previsto."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Colle",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Pegamento (m.) / Cola (f.)",
-                "Ejemplo en francés": "Utilise de la colle forte pour réparer ce vase cassé.",
-                "Ejemplo en español": "Usa pegamento fuerte para reparar ese jarrón roto."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Frais",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Fresco / Reciente",
-                "Ejemplo en francés": "J'aime aller chercher du pain frais tous les matins.",
-                "Ejemplo en español": "Me gusta ir a buscar pan fresco todas las mañanas."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Réfléchissant",
-        "categoría": "Transporte y Ciudad",
-        "definiciones": [
-            {
-                "Término en español": "Reflectante / Reflexivo",
-                "Ejemplo en francés": "Les cyclistes doivent porter un gilet réfléchissant la nuit.",
-                "Ejemplo en español": "Los cyclistas deben llevar un chaleco reflectante por la noche."
+                "Término en español": "Enseguida / Inmediatamente",
+                "Ejemplo en francés": "Veuillez me contacter tout de suite après votre arrivée.",
+                "Ejemplo en español": "Por favor, póngase en contacto conmigo enseguida después de su llegada."
             }
         ]
     },
@@ -1389,24 +1754,35 @@
         ]
     },
     {
-        "Término en francés": "Léger",
-        "categoría": "Vida Diaria",
+        "Término en francés": "Transmettre",
+        "categoría": "Trabajo y Negocios",
         "definiciones": [
             {
-                "Término en español": "Ligero / Leve",
-                "Ejemplo en francés": "Ce bagage est très léger, je peux le porter facilement.",
-                "Ejemplo en español": "Este equipaje es muy ligero, puedo llevarlo fácilmente."
+                "Término en español": "Transmitir",
+                "Ejemplo en francés": "Il est important de transmettre nos traditions aux enfants.",
+                "Ejemplo en español": "Es importante transmitir nuestras tradiciones a los niños."
             }
         ]
     },
     {
-        "Término en francés": "Malin",
+        "Término en francés": "Verrouillage",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Listo / Astuto",
-                "Ejemplo en francés": "Il a été assez malin pour trouver une solution originale.",
-                "Ejemplo en español": "Fue lo suficientemente astuto para encontrar una solución original."
+                "Término en español": "Bloqueo / Cierre",
+                "Ejemplo en francés": "Le verrouillage automatique des portes est activé.",
+                "Ejemplo en español": "El bloqueo automático de las puertas está activado."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Verti",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Vértigo (forma abreviada/jerga)",
+                "Ejemplo en francés": "J'ai eu un petit verti en regardant en bas.",
+                "Ejemplo en español": "Me dio un pequeño vértigo al mirar hacia abajo."
             }
         ]
     },
@@ -1422,123 +1798,67 @@
         ]
     },
     {
-        "Término en francés": "Plat",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Plato (m.) / Plano (adj.)",
-                "Ejemplo en francés": "La Terre n'est pas plate, mais ce terrain l'est.",
-                "Ejemplo en español": "La Tierra no es plana, pero este terreno sí lo es."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Doux",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Dulce / Suave",
-                "Ejemplo en francés": "Cette écharpe en laine est vraiment très douce.",
-                "Ejemplo en español": "Esta bufanda de lana es realmente muy suave."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Performant",
-        "categoría": "Trabajo y Negocios",
-        "definiciones": [
-            {
-                "Término en español": "Eficiente / De alto rendimiento",
-                "Ejemplo en francés": "Nous avons besoin d'un ordinateur plus performant pour le montage vidéo.",
-                "Ejemplo en español": "Necesitamos un ordenador más eficiente para el montaje de vídeo."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Collant",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Pegajoso / Medias (f. pl.)",
-                "Ejemplo en francés": "Tes mains sont collantes parce que tu as mangé des bonbons.",
-                "Ejemplo en español": "Tienes las manos pegajosas porque has comido caramelos."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Coloré",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Colorido / Colorido",
-                "Ejemplo en francés": "Elle porte toujours un vêtement très coloré pour égayer sa journée.",
-                "Ejemplo en español": "Ella siempre lleva una prenda muy colorida para alegrar su día."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Glace",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Hielo (m.) / Helado (m.) / Espejo (m.)",
-                "Ejemplo en francés": "Voulez-vous un peu de glace dans votre boisson ?",
-                "Ejemplo en español": "¿Quiere un poco de hielo en su bebida?"
-            }
-        ]
-    },
-    {
-        "Término en francés": "Glissant",
-        "categoría": "Transporte y Ciudad",
-        "definiciones": [
-            {
-                "Término en español": "Resbaladizo",
-                "Ejemplo en francés": "Attention, le sol est mouillé et très glissant.",
-                "Ejemplo en español": "Cuidado, el suelo está mojado y muy resbaladizo."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Approprié",
-        "categoría": "Trabajo y Negocios",
-        "definiciones": [
-            {
-                "Término en español": "Apropiado / Adecuado",
-                "Ejemplo en francés": "Il est important de porter une tenue appropriée pour l'entretien.",
-                "Ejemplo en español": "Es importante llevar una vestimenta adecuada para la entrevista."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Étui",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Estuche (m.) / Funda (f.)",
-                "Ejemplo en francés": "N'oublie pas de ranger tes lunettes dans leur étui.",
-                "Ejemplo en español": "No olvides guardar tus gafas en su estuche."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Rassembler",
+        "Término en francés": "À ce sujet",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
             {
-                "Término en español": "Reunir / Juntar",
-                "Ejemplo en francés": "Il faut rassembler tous les documents avant la réunion.",
-                "Ejemplo en español": "Hay que reunir todos los documentos antes de la reunión."
+                "Término en español": "Sobre este tema",
+                "Ejemplo en francés": "Le conseil d'administration a voté à ce sujet hier.",
+                "Ejemplo en español": "La junta directiva votó sobre este tema ayer."
+            },
+            {
+                "Término en español": "Al respecto",
+                "Ejemplo en francés": "Je n'ai pas encore reçu de commentaires à ce sujet.",
+                "Ejemplo en español": "Aún no he recibido comentarios al respecto."
             }
         ]
     },
     {
-        "Término en francés": "Échapper",
-        "categoría": "Vida Diaria",
+        "Término en francés": "À chaque fois que",
+        "categoría": "Conectores y Expresiones",
         "definiciones": [
             {
-                "Término en español": "Escapar / Evadir",
-                "Ejemplo en francés": "Le voleur a réussi à échapper à la police.",
-                "Ejemplo en español": "El ladrón logró escapar de la policía."
+                "Término en español": "Cada vez que",
+                "Ejemplo en francés": "À chaque fois que je regarde ce film, je pleure.",
+                "Ejemplo en español": "Cada vez que veo esta película, lloro."
+            }
+        ]
+    },
+    {
+        "Término en francés": "À l'occasion de",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Con motivo de / Con ocasión de",
+                "Ejemplo en francés": "Nous organisons une fête à l'occasion de son anniversaire.",
+                "Ejemplo en español": "Estamos organizando una fiesta con motivo de su cumpleaños."
+            }
+        ]
+    },
+    {
+        "Término en francés": "À tout moment",
+        "categoría": "Tiempo y Frecuencia",
+        "definiciones": [
+            {
+                "Término en español": "En cualquier momento",
+                "Ejemplo en francés": "Vous pouvez me contacter à tout moment si vous avez une question.",
+                "Ejemplo en español": "Puedes contactarme en cualquier momento si tienes una pregunta."
+            },
+            {
+                "Término en español": "Todo el tiempo (menos común)",
+                "Ejemplo en francés": "Elle est à tout moment en train de réviser pour ses examens.",
+                "Ejemplo en español": "Ella está todo el tiempo repasando para sus exámenes."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ça alors",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "¡Vaya! / ¡No me digas!",
+                "Ejemplo en francés": "Ça alors ! Je ne m'attendais pas du tout à te voir ici.",
+                "Ejemplo en español": "¡Vaya! No esperaba para nada verte aquí."
             }
         ]
     },
@@ -1554,91 +1874,76 @@
         ]
     },
     {
-        "Término en francés": "Entouré",
-        "categoría": "Vida Diaria",
-        "verbo_infinitivo": "Entourer",
-        "definiciones": [
-            {
-                "Término en español": "Rodeado",
-                "Ejemplo en francés": "Le château est entouré d'un magnifique jardin.",
-                "Ejemplo en español": "El castillo está rodeado de un jardín magnífico."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Défoncer",
+        "Término en francés": "Échapper",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Reventar / Destrozar",
-                "Ejemplo en francés": "Les pompiers ont dû défoncer la porte pour entrer.",
-                "Ejemplo en español": "Los bomberos tuvieron que reventar la puerta para entrar."
+                "Término en español": "Escapar / Evadir",
+                "Ejemplo en francés": "Le voleur a réussi à échapper à la police.",
+                "Ejemplo en español": "El ladrón logró escapar de la policía."
             }
         ]
     },
     {
-        "Término en francés": "Arriver à",
-        "categoría": "Conectores y Expresiones",
+        "Término en francés": "Échoué à",
+        "categoría": "Trabajo y Negocios",
+        "verbo_infinitivo": "Échouer",
         "definiciones": [
             {
-                "Término en español": "Lograr / Conseguir",
-                "Ejemplo en francés": "Je n'arrive pas à ouvrir ce bocal de confiture.",
-                "Ejemplo en español": "No logro abrir este bote de mermelada."
+                "Término en español": "Fracasado en",
+                "Ejemplo en francés": "Le gouvernement a échoué à atteindre ses objectifs économiques.",
+                "Ejemplo en español": "El gobierno ha fracasado en alcanzar sus objetivos económicos."
+            },
+            {
+                "Término en español": "Varado en (para un barco o persona en un lugar)",
+                "Ejemplo en francés": "Le navire a échoué à cause de la tempête.",
+                "Ejemplo en español": "Le navío quedó varado a causa de la tormenta."
             }
         ]
     },
     {
-        "Término en francés": "Débarrasser",
+        "Término en francés": "Élu",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Élire",
+        "definiciones": [
+            {
+                "Término en español": "Elegido / Electo",
+                "Ejemplo en francés": "Il a été élu président l'année dernière.",
+                "Ejemplo en español": "Fue elegido presidente el año pasado."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Épais",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Despejar / Quitar",
-                "Ejemplo en francés": "Peux-tu m'aider à débarrasser la table après le dîner ?",
-                "Ejemplo en español": "¿Puedes ayudarme a recoger la mesa después de la cena?"
+                "Término en español": "Espeso / Grueso",
+                "Ejemplo en francés": "En hiver, je porte toujours un pull en laine très épais.",
+                "Ejemplo en español": "En invierno, siempre llevo un jersey de lana muy grueso."
             }
         ]
     },
     {
-        "Término en francés": "Rigole",
+        "Término en francés": "Éteint (éteindre)",
+        "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Éteindre",
+        "definiciones": [
+            {
+                "Término en español": "Apagar",
+                "Ejemplo en francés": "N'oublie pas d'éteindre la lumière en partant.",
+                "Ejemplo en español": "No olvides apagar la luz al marcharte."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Étui",
         "categoría": "Vida Diaria",
         "definiciones": [
             {
-                "Término en español": "Zanja (f.) / Desagüe (m.) / Canaleta (f.)",
-                "Ejemplo en francés": "L'eau de pluie s'écoule rapidement dans la rigole.",
-                "Ejemplo en español": "El agua de lluvia fluye rápidamente por la canaleta."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Déchiré",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Roto / Desgarrado",
-                "Ejemplo en francés": "Il a jeté son vieux pantalon qui était tout déchiré.",
-                "Ejemplo en español": "Tiró su pantalón viejo que estaba todo roto."
-            }
-        ]
-    },
-    {
-        "Término en francés": "S'envoler",
-        "categoría": "Vida Diaria",
-        "definiciones": [
-            {
-                "Término en español": "Echar a volar / Salir volando",
-                "Ejemplo en francés": "Avec ce vent fort, mon chapeau risque de s'envoler.",
-                "Ejemplo en español": "Con este viento tan fuerte, mi sombrero corre el riesgo de salir volando."
-            }
-        ]
-    },
-    {
-        "Término en francés": "Celui-ci",
-        "categoría": "Conectores y Expresiones",
-        "definiciones": [
-            {
-                "Término en español": "Este / Este de aquí",
-                "Ejemplo en francés": "Parmi tous ces livres, celui-ci est mon préféré.",
-                "Ejemplo en español": "De todos estos libros, este es mi preferido."
+                "Término en español": "Estuche (m.) / Funda (f.)",
+                "Ejemplo en francés": "N'oublie pas de ranger tes lunettes dans leur étui.",
+                "Ejemplo en español": "No olvides guardar tus gafas en su estuche."
             }
         ]
     }
