@@ -22,6 +22,11 @@
         <select id="voiceSelect"></select>
       </div>
     </div>
+    <div class="filter-container">
+      <button class="filter-btn active" id="filter-all" onclick="setFilter('all')" title="Todas las palabras">📚</button>
+      <button class="filter-btn" id="filter-pending" onclick="setFilter('pending')" title="Solo pendientes">⏳</button>
+      <button class="filter-btn" id="filter-learned" onclick="setFilter('learned')" title="Solo aprendidas">✅</button>
+    </div>
     <button class="theme-toggle" id="themeToggle" title="Cambiar tema">🌓</button>
   </div>
 
@@ -31,15 +36,18 @@
     </div>
 
     <div class="controls">
-      <button class="btn-action" onclick="prevCard()" title="Anterior">
-        ⬅️
-      </button>
-      <button class="btn-action" onclick="randomCard()" title="Aleatorio">
-        🎲
-      </button>
-      <button class="btn-action" onclick="nextCard()" title="Siguiente">
-        ➡️
-      </button>
+      <div class="nav-buttons">
+        <button class="btn-action" onclick="prevCard()" title="Anterior">
+          ⬅️
+        </button>
+        <button class="btn-action" onclick="randomCard()" title="Aleatorio">
+          🎲
+        </button>
+        <button class="btn-action" onclick="nextCard()" title="Siguiente">
+          ➡️
+        </button>
+      </div>
+      <div class="counter-external" id="counterExternal">0 / 0</div>
     </div>
 
   </div>

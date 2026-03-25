@@ -1,19 +1,22 @@
+let allFlashcards = [];
 let flashcards = [];
 let current = 0;
+let learnedTerms = JSON.parse(localStorage.getItem('learnedTerms')) || [];
+let currentFilter = 'all';
 let selectedVoiceName = localStorage.getItem('preferredVoice');
 
 // Cargar datos
 async function init() {
     try {
         const response = await fetch('vocabulario.json');
-        flashcards = await response.json();
+        allFlashcards = await response.json();
 
         // Ordenar alfabéticamente por término francés
-        flashcards.sort((a, b) =>
+        allFlashcards.sort((a, b) =>
             a["Término en francés"].localeCompare(b["Término en francés"], 'fr', { sensitivity: 'base' })
         );
 
-        showCard(0);
+        applyFilter();
     } catch (error) {
         console.error('Error cargando JSON:', error);
         const cardElement = document.getElementById('flashcard');
@@ -114,8 +117,22 @@ function showCard(idx) {
             <div class="word-fr">${terminoFr}</div>
         `;
 
+        if (card.verbo_infinitivo) {
+            html += `<div class="word-infinitive">${card.verbo_infinitivo}</div>`;
+        }
+
+        const isLearned = learnedTerms.includes(terminoFr);
+        html += `
+            <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
+                    onclick="toggleLearned('${palabraEscaped}')" 
+                    title="${isLearned ? 'Marcar como pendiente' : 'Marcar como aprendida'}">
+                ✅
+            </button>
+        `;
+
         if (card.definiciones) {
-            card.definiciones.forEach((def, i) => {
+            const definitionsToShow = card.definiciones.slice(0, 2);
+            definitionsToShow.forEach((def, i) => {
                 if (i > 0) html += '<hr>';
                 const oracionEscaped = def["Ejemplo en francés"].replace(/'/g, "\\'");
                 html += `
@@ -133,12 +150,16 @@ function showCard(idx) {
             });
         }
 
-        html += `<div class="counter" id="counter">${idx + 1} / ${flashcards.length}</div>`;
 
         container.innerHTML = html;
         container.style.transform = '';
         container.classList.remove('fade-out');
-        document.getElementById('counter').textContent = `${idx + 1} / ${flashcards.length}`;
+        
+        // Actualizar contador externo
+        const externalCounter = document.getElementById('counterExternal');
+        if (externalCounter) {
+            externalCounter.textContent = `${idx + 1} / ${flashcards.length}`;
+        }
     }, 500);
 }
 
@@ -162,6 +183,57 @@ function randomCard() {
     } while (rand === current);
     current = rand;
     showCard(current);
+}
+
+function setFilter(filterType) {
+    currentFilter = filterType;
+    
+    // UI: Actualizar botones activos
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    const activeBtn = document.getElementById(`filter-${filterType}`);
+    if (activeBtn) activeBtn.classList.add('active');
+
+    applyFilter();
+}
+
+function applyFilter() {
+    if (currentFilter === 'learned') {
+        flashcards = allFlashcards.filter(card => learnedTerms.includes(card["Término en francés"]));
+    } else if (currentFilter === 'pending') {
+        flashcards = allFlashcards.filter(card => !learnedTerms.includes(card["Término en francés"]));
+    } else {
+        flashcards = [...allFlashcards];
+    }
+
+    current = 0;
+    if (flashcards.length > 0) {
+        showCard(0);
+    } else {
+        const container = document.getElementById('flashcard');
+        if (container) {
+            container.innerHTML = `<p class="no-data">No hay palabras en esta categoría.</p>`;
+        }
+        const externalCounter = document.getElementById('counterExternal');
+        if (externalCounter) externalCounter.textContent = `0 / 0`;
+    }
+}
+
+function toggleLearned(term) {
+    const index = learnedTerms.indexOf(term);
+    if (index > -1) {
+        learnedTerms.splice(index, 1);
+    } else {
+        learnedTerms.push(term);
+    }
+    
+    localStorage.setItem('learnedTerms', JSON.stringify(learnedTerms));
+    
+    // Si estamos en un filtro activo y la palabra ya no coincide, refrescar
+    if (currentFilter !== 'all') {
+        applyFilter();
+    } else {
+        showCard(current); // Solo refrescar la visual de la tarjeta actual
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

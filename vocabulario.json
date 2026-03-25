@@ -116,7 +116,6 @@
             }
         ]
     },
-
     {
         "Término en francés": "Ceci étant dit",
         "categoría": "Conectores y Expresiones",
@@ -163,6 +162,7 @@
     {
         "Término en francés": "Échoué à",
         "categoría": "Trabajo y Negocios",
+        "verbo_infinitivo": "Échouer",
         "definiciones": [
             {
                 "Término en español": "Fracasado en",
@@ -193,7 +193,7 @@
         ]
     },
     {
-        "Término en francés": "En mettant l'accent sobre",
+        "Término en francés": "En mettant l'accent sur",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
             {
@@ -492,6 +492,7 @@
     {
         "Término en francés": "Retenu",
         "categoría": "Trabajo y Negocios",
+        "verbo_infinitivo": "Retenir",
         "definiciones": [
             {
                 "Término en español": "Seleccionado / Elegido",
@@ -669,6 +670,7 @@
     {
         "Término en francés": "Devenu",
         "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Devenir",
         "definiciones": [
             {
                 "Término en español": "Convertido / Llegado a ser",
@@ -680,6 +682,7 @@
     {
         "Término en francés": "Demeure",
         "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Demeurer",
         "definiciones": [
             {
                 "Término en español": "Permanece / Se queda",
@@ -778,6 +781,7 @@
     {
         "Término en francés": "Élu",
         "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Élire",
         "definiciones": [
             {
                 "Término en español": "Elegido / Electo",
@@ -829,7 +833,6 @@
             }
         ]
     },
-
     {
         "Término en francés": "Se rendre",
         "categoría": "Transporte y Ciudad",
@@ -865,6 +868,7 @@
     {
         "Término en francés": "Atteint",
         "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Atteindre",
         "definiciones": [
             {
                 "Término en español": "Alcanzado / Logrado",
@@ -908,6 +912,7 @@
     {
         "Término en francés": "Soulage",
         "categoría": "Salud y Bienestar",
+        "verbo_infinitivo": "Soulager",
         "definiciones": [
             {
                 "Término en español": "Aliviar / Consolar",
@@ -919,6 +924,7 @@
     {
         "Término en francés": "Apaise",
         "categoría": "Salud y Bienestar",
+        "verbo_infinitivo": "Apaiser",
         "definiciones": [
             {
                 "Término en español": "Calmar / Apaciguar",
@@ -1038,6 +1044,7 @@
     {
         "Término en francés": "Aborde",
         "categoría": "Conectores y Expresiones",
+        "verbo_infinitivo": "Aborder",
         "definiciones": [
             {
                 "Término en español": "Abordar / Tratar",
@@ -1549,6 +1556,7 @@
     {
         "Término en francés": "Entouré",
         "categoría": "Vida Diaria",
+        "verbo_infinitivo": "Entourer",
         "definiciones": [
             {
                 "Término en español": "Rodeado",
@@ -1634,5 +1642,4 @@
             }
         ]
     }
-
 ]

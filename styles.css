@@ -52,14 +52,54 @@ body {
 }
 
 
-/* HEADER Y TONTROL DE TEMA */
+/* HEADER Y BARRA DE FILTROS */
 .header {
     position: fixed;
     top: 15px;
+    left: 15px;
     right: 15px;
-    z-index: 100;
     display: flex;
-    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.header > * {
+    pointer-events: auto;
+}
+
+.filter-container {
+    display: flex;
+    gap: 8px;
+    background: var(--glass-bg);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    filter: grayscale(1) opacity(0.4);
+}
+
+.filter-btn.active {
+    filter: grayscale(0) opacity(1);
+    transform: scale(1.15);
+}
+
+.filter-btn:hover {
+    transform: scale(1.1);
+    filter: grayscale(0) opacity(0.8);
 }
 
 .settings-container {
@@ -94,7 +134,6 @@ body {
         opacity: 0;
         transform: translateY(-10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -141,21 +180,18 @@ body {
     transition: var(--transition);
 }
 
-
-
 /* CONTENEDOR PRINCIPAL */
 .container {
     width: 100%;
     max-width: 100%;
-    /* Ocupa todo el ancho en móvil */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 0px;
     perspective: 1000px;
 }
 
-/* TARJETA (ENFOQUE MÓVIL) */
+/* TARJETA */
 .flashcard {
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(20px);
@@ -163,15 +199,13 @@ body {
     border: 1px solid var(--glass-border);
     border-radius: 24px;
     box-shadow: var(--shadow);
-    padding: 40px 20px 30px;
-    /* Padding reducido en móvil */
+    padding: 60px 20px 25px;
     width: 100%;
-    min-height: 380px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
@@ -186,6 +220,29 @@ body {
     transform: translateY(30px) scale(0.95);
 }
 
+/* SISTEMA DE DOMINADAS (BOTÓN EN TARJETA) */
+.learned-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    opacity: 0.2;
+    filter: grayscale(1);
+}
+
+.learned-toggle.is-learned {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.learned-toggle:hover {
+    transform: scale(1.2);
+}
 
 /* BOTÓN DE SONIDO PRINCIPAL */
 .sound-btn-main {
@@ -196,7 +253,6 @@ body {
     color: white;
     border: none;
     width: 44px;
-    /* Touch target optimizado */
     height: 44px;
     border-radius: 14px;
     cursor: pointer;
@@ -208,7 +264,7 @@ body {
     box-shadow: 0 0 10px var(--accent-glow);
 }
 
-/* TEXTOS (MÓVIL) */
+/* TEXTOS */
 .word-fr {
     background: linear-gradient(135deg, var(--accent-color) 30%, #a855f7 100%);
     -webkit-background-clip: text;
@@ -216,9 +272,18 @@ body {
     -webkit-text-fill-color: transparent;
     font-size: var(--fs-title);
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
     line-height: 1.1;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+}
+
+.word-infinitive {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-weight: 500;
+    opacity: 0.85;
 }
 
 .def-container {
@@ -279,26 +344,44 @@ body {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* CONTROLES (ENFOQUE TÁCTIL) */
+/* CONTROLES */
 .controls {
     display: flex;
-    justify-content: center;
-    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 0 10px;
+    padding: 2px 15px;
+    gap: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.counter-external {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    background: var(--glass-bg);
+    padding: 6px 14px;
+    border-radius: 20px;
+    opacity: 0.9;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    white-space: nowrap;
 }
 
 .btn-action {
     background: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
     border: none;
     color: var(--text-primary);
     padding: 10px;
     font-size: 2.2rem;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,21 +398,6 @@ body {
 
 .btn-action span {
     display: none;
-    /* Ocultar texto en móviles muy pequeños por defecto */
-}
-
-/* El botón aleatorio ya no ocupa todo el ancho */
-
-.counter {
-    margin-top: auto;
-    margin-bottom: -10px; /* Ajuste fino para la base */
-    font-size: 0.85rem;
-    color: var(--text-primary);
-    font-weight: 600;
-    background: var(--glass-bg);
-    padding: 4px 14px;
-    border-radius: 20px;
-    opacity: 0.8;
 }
 
 hr {
@@ -339,54 +407,42 @@ hr {
     margin: 8px 0;
 }
 
-/* MEDIA QUERIES (ESCALADO PROGRESIVO) */
+.no-data {
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 40px 20px;
+}
 
-/* Tablets y móviles grandes (> 480px) */
+/* MEDIA QUERIES */
 @media (min-width: 480px) {
     body {
         padding: 40px 20px;
     }
-
     .container {
         max-width: 500px;
     }
-
     .flashcard {
         padding: 48px 32px;
         border-radius: 32px;
-        min-height: 420px;
     }
-
     .word-fr {
         font-size: 2.5rem;
     }
-
     .btn-action span {
         display: inline;
     }
-
-    /* Mostrar texto de botones */
-
     .controls {
-        display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
-/* Desktop (> 768px) */
 @media (min-width: 768px) {
     :root {
         --fs-title: 3.2rem;
     }
-
-/* .flashcard:hover {
-        transform: translateY(-8px) scale(1.02);
-    } */
-
     .theme-toggle:hover {
         transform: rotate(15deg) scale(1.1);
     }
-
     .sound-btn-main:hover {
         transform: scale(1.1) rotate(-5deg);
     }
