@@ -104,31 +104,31 @@ function showCard(idx) {
     const container = document.getElementById('flashcard');
     if (!container) return;
 
-    const randomRot = (Math.random() - 0.5) * 10;
-    container.style.transform = `rotateY(${randomRot}deg) translateY(10px) scale(0.95)`;
-    container.classList.add('fade-out');
+    const innerContent = container.querySelector('.card-content');
+    if (innerContent) {
+        innerContent.classList.add('fade-out-content');
+    }
 
     setTimeout(() => {
         const terminoFr = card["Término en francés"];
         const palabraEscaped = terminoFr.replace(/'/g, "\\'");
 
+        const isLearned = learnedTerms.includes(terminoFr);
+
         let html = `
             <button class="sound-btn-main" onclick="speak('${palabraEscaped}')" title="Escuchar término">🔊</button>
+            <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
+                    onclick="toggleLearned('${palabraEscaped}')" 
+                    title="${isLearned ? 'Marcar como pendiente' : 'Marcar como aprendida'}">
+                ✅
+            </button>
+            <div class="card-content">
             <div class="word-fr">${terminoFr}</div>
         `;
 
         if (card.verbo_infinitivo) {
             html += `<div class="word-infinitive">${card.verbo_infinitivo}</div>`;
         }
-
-        const isLearned = learnedTerms.includes(terminoFr);
-        html += `
-            <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
-                    onclick="toggleLearned('${palabraEscaped}')" 
-                    title="${isLearned ? 'Marcar como pendiente' : 'Marcar como aprendida'}">
-                ✅
-            </button>
-        `;
 
         if (card.definiciones) {
             const definitionsToShow = card.definiciones.slice(0, 2);
@@ -150,17 +150,16 @@ function showCard(idx) {
             });
         }
 
+        html += `</div>`;
 
         container.innerHTML = html;
-        container.style.transform = '';
-        container.classList.remove('fade-out');
         
         // Actualizar contador externo
         const externalCounter = document.getElementById('counterExternal');
         if (externalCounter) {
             externalCounter.textContent = `${idx + 1} / ${flashcards.length}`;
         }
-    }, 500);
+    }, 150);
 }
 
 function nextCard() {
