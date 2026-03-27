@@ -3,7 +3,6 @@ let flashcards = [];
 let current = 0;
 let learnedTerms = JSON.parse(localStorage.getItem('learnedTerms')) || [];
 let currentFilter = 'all';
-let selectedVoiceName = localStorage.getItem('preferredVoice');
 
 // Cargar datos
 async function init() {
@@ -26,68 +25,33 @@ async function init() {
     }
 }
 
-function loadVoices() {
-    const voiceSelect = document.getElementById('voiceSelect');
-    if (!voiceSelect) return;
-
-    const voices = window.speechSynthesis.getVoices();
-    // Filtramos solo voces de francés (de cualquier región)
-    const frVoices = voices.filter(v => v.lang.startsWith('fr'));
-
-    // Limpiar selector
-    voiceSelect.innerHTML = '';
-
-    if (frVoices.length === 0) {
-        const opt = document.createElement('option');
-        opt.textContent = 'No se encontraron voces francesas';
-        voiceSelect.appendChild(opt);
-        return;
-    }
-
-    // Ordenar voces: primero las que parecen más naturales o premium (Google, Natural, Online)
-    frVoices.sort((a, b) => {
-        const score = (v) => {
-            let s = 0;
-            const name = v.name.toLowerCase();
-            if (name.includes('google')) s += 10;
-            if (name.includes('natural')) s += 8;
-            if (name.includes('online')) s += 5;
-            if (name.includes('ca')) s += 2; // Prioridad leve al francés canadiense
-            return s;
-        };
-        return score(b) - score(a);
-    });
-
-    frVoices.forEach(voice => {
-        const option = document.createElement('option');
-        option.value = voice.name;
-        // Almacenamos el idioma en un atributo de datos para usarlo al hablar
-        option.setAttribute('data-lang', voice.lang);
-        option.textContent = `${voice.name} (${voice.lang})`;
-        if (voice.name === selectedVoiceName) {
-            option.selected = true;
-        }
-        voiceSelect.appendChild(option);
-    });
-
-    // Set default if none selected
-    if (!selectedVoiceName && frVoices.length > 0) {
-        selectedVoiceName = frVoices[0].name;
-    }
-}
-
 function speak(text) {
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
         const utter = new SpeechSynthesisUtterance(text);
 
         const voices = window.speechSynthesis.getVoices();
-        const voice = voices.find(v => v.name === selectedVoiceName) ||
-            voices.find(v => v.lang.startsWith('fr'));
+        
+        // Buscar la voz francesa con más prioridad (Google, Natural, etc.)
+        const frVoices = voices.filter(v => v.lang.startsWith('fr'));
+        frVoices.sort((a, b) => {
+            const score = (v) => {
+                let s = 0;
+                const name = v.name.toLowerCase();
+                if (name.includes('google')) s += 10;
+                if (name.includes('natural')) s += 8;
+                if (name.includes('online')) s += 5;
+                if (name.includes('ca')) s += 2;
+                return s;
+            };
+            return score(b) - score(a);
+        });
+
+        const voice = frVoices[0];
 
         if (voice) {
             utter.voice = voice;
-            utter.lang = voice.lang; // Forzar fonética del idioma de la voz
+            utter.lang = voice.lang; 
         } else {
             utter.lang = 'fr-FR';
         }
@@ -196,13 +160,31 @@ function setFilter(filterType) {
 }
 
 function applyFilter() {
-    if (currentFilter === 'learned') {
-        flashcards = allFlashcards.filter(card => learnedTerms.includes(card["Término en francés"]));
-    } else if (currentFilter === 'pending') {
-        flashcards = allFlashcards.filter(card => !learnedTerms.includes(card["Término en francés"]));
-    } else {
-        flashcards = [...allFlashcards];
-    }
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+    flashcards = allFlashcards.filter(card => {
+        // Filtrar por estado (dominadas / pendientes)
+        let statusMatch = true;
+        if (currentFilter === 'learned') {
+            statusMatch = learnedTerms.includes(card["Término en francés"]);
+        } else if (currentFilter === 'pending') {
+            statusMatch = !learnedTerms.includes(card["Término en francés"]);
+        }
+
+        // Filtrar por término de búsqueda (frances o español)
+        let searchMatch = true;
+        if (searchTerm !== '') {
+            const termFr = card["Término en francés"].toLowerCase();
+            const termInf = (card.verbo_infinitivo || "").toLowerCase();
+            const hasDefMatch = card.definiciones && card.definiciones.some(def => 
+                def["Término en español"].toLowerCase().includes(searchTerm)
+            );
+            searchMatch = termFr.includes(searchTerm) || termInf.includes(searchTerm) || hasDefMatch;
+        }
+
+        return statusMatch && searchMatch;
+    });
 
     current = 0;
     if (flashcards.length > 0) {
@@ -210,7 +192,7 @@ function applyFilter() {
     } else {
         const container = document.getElementById('flashcard');
         if (container) {
-            container.innerHTML = `<p class="no-data">No hay palabras en esta categoría.</p>`;
+            container.innerHTML = `<p class="no-data">No hay resultados para tu búsqueda.</p>`;
         }
         const externalCounter = document.getElementById('counterExternal');
         if (externalCounter) externalCounter.textContent = `0 / 0`;
@@ -253,40 +235,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Configuración de Voz
-    const voiceSettingsBtn = document.getElementById('voiceSettingsBtn');
-    const voiceSelectorPopup = document.getElementById('voiceSelectorPopup');
-    const voiceSelect = document.getElementById('voiceSelect');
-
-    if (voiceSettingsBtn) {
-        voiceSettingsBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            voiceSelectorPopup.classList.toggle('active');
+    // Evento para el buscador
+    const searchInput = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            if (clearSearchBtn) {
+                clearSearchBtn.style.display = searchInput.value.length > 0 ? 'flex' : 'none';
+            }
+            applyFilter();
         });
+        
+        if (clearSearchBtn) {
+            clearSearchBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                clearSearchBtn.style.display = 'none';
+                applyFilter();
+                searchInput.focus();
+            });
+        }
     }
 
-    // Cerrar popup al hacer clic fuera
-    document.addEventListener('click', () => {
-        if (voiceSelectorPopup) voiceSelectorPopup.classList.remove('active');
-    });
-
-    if (voiceSelectorPopup) {
-        voiceSelectorPopup.addEventListener('click', (e) => e.stopPropagation());
-    }
-
-    if (voiceSelect) {
-        voiceSelect.addEventListener('change', () => {
-            selectedVoiceName = voiceSelect.value;
-            localStorage.setItem('preferredVoice', selectedVoiceName);
-            // Probar la voz
-            speak("Bonjour");
-        });
-    }
-
-    // Inicializar voces
+    // Asegurarse de cargar las voces localmente en background para que estén listas
     if ('speechSynthesis' in window) {
-        window.speechSynthesis.onvoiceschanged = loadVoices;
-        loadVoices();
+        // Un simple getVoices() triggerea la carga en Chrome
+        window.speechSynthesis.getVoices();
     }
 
     init();

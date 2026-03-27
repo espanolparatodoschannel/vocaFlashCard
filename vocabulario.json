@@ -264,6 +264,17 @@
         ]
     },
     {
+        "Término en francés": "Au-devant",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Al encuentro",
+                "Ejemplo en francés": "Elle est allée au-devant de ses invités pour les accueillir.",
+                "Ejemplo en español": "Ella fue al encuentro de sus invitados para recibirlos."
+            }
+        ]
+    },
+    {
         "Término en francés": "Autour",
         "categoría": "Vida Diaria",
         "definiciones": [
@@ -329,6 +340,22 @@
         ]
     },
     {
+        "Término en francés": "Bas",
+        "categoría": "Adjetivos / Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Bajo",
+                "Ejemplo en francés": "Le plafond de cette pièce est vraiment très bas.",
+                "Ejemplo en español": "El techo de esta habitación es realmente muy bajo."
+            },
+            {
+                "Término en español": "Medias",
+                "Ejemplo en francés": "Elle porte des bas en laine pour ne pas avoir froid.",
+                "Ejemplo en español": "Ella lleva medias de lana para no tener frío."
+            }
+        ]
+    },
+    {
         "Término en francés": "Bassin",
         "categoría": "Vida Diaria",
         "definiciones": [
@@ -341,6 +368,22 @@
                 "Término en español": "Pelvis",
                 "Ejemplo en francés": "Elle s'est blessée au bassin en tombant.",
                 "Ejemplo en español": "Se lastimó la pelvis al caer."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Bocal",
+        "categoría": "Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Frasco / Tarro",
+                "Ejemplo en francés": "J'ai mis les biscuits dans un bocal en verre.",
+                "Ejemplo en español": "Puse las galletas en un frasco de vidrio."
+            },
+            {
+                "Término en español": "Pecera",
+                "Ejemplo en francés": "Le poisson rouge tourne en rond dans son bocal.",
+                "Ejemplo en español": "El pez de colores da vueltas en su pecera."
             }
         ]
     },
@@ -571,19 +614,13 @@
         ]
     },
     {
-        "Término en francés": "Demeure",
-        "categoría": "Vida Diaria",
-        "verbo_infinitivo": "Demeurer",
+        "Término en francés": "Dehors",
+        "categoría": "Conectores y Expresiones",
         "definiciones": [
             {
-                "Término en español": "Permanece / Se queda",
-                "Ejemplo en francés": "Le mystère demeure entier après l'enquête.",
-                "Ejemplo en español": "El misterio permanece intacto después de la investigación."
-            },
-            {
-                "Término en español": "Mansión / Residencia",
-                "Ejemplo en francés": "C'est une magnifique demeure du XIXe siècle.",
-                "Ejemplo en español": "Es una magnífica mansión del siglo XIX."
+                "Término en español": "Fuera / Afuera",
+                "Ejemplo en francés": "Il fait froid, tu devrais rentrer, ne reste pas dehors.",
+                "Ejemplo en español": "Hace frío, deberías entrar, no te quedes afuera."
             }
         ]
     },
@@ -726,6 +763,17 @@
         ]
     },
     {
+        "Término en francés": "En haut",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Arriba",
+                "Ejemplo en francés": "Mes clés sont restées en haut, dans la chambre.",
+                "Ejemplo en español": "Mis llaves se quedaron arriba, en la habitación."
+            }
+        ]
+    },
+    {
         "Término en francés": "En mettant l'accent sur",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
@@ -853,6 +901,33 @@
         ]
     },
     {
+        "Término en francés": "Haut",
+        "categoría": "Adjetivos / Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Alto",
+                "Ejemplo en francés": "C'est un bâtiment très haut avec une vue magnifique.",
+                "Ejemplo en español": "Es un edificio muy alto con una vista magnífica."
+            },
+            {
+                "Término en español": "Parte de arriba / Top",
+                "Ejemplo en francés": "J'aime beaucoup le haut que tu portes aujourd'hui.",
+                "Ejemplo en español": "Me gusta mucho la parte de arriba que llevas hoy."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Hors",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Fuera de",
+                "Ejemplo en francés": "Il est resté hors de la maison pendant toute la journée.",
+                "Ejemplo en español": "Él se quedó fuera de la casa durante todo el día."
+            }
+        ]
+    },
+    {
         "Término en francés": "Hâte",
         "categoría": "Vida Diaria",
         "definiciones": [
@@ -941,6 +1016,39 @@
                 "Término en español": "Acepto / Me gustaría",
                 "Ejemplo en francés": "Si tu as du café en trop, je veux bien une tasse.",
                 "Ejemplo en español": "Si te sobra café, acepto una taza."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Joindre",
+        "categoría": "Verbos",
+        "verbo_infinitivo": "Joindre",
+        "definiciones": [
+            {
+                "Término en español": "Contactar / Localizar",
+                "Ejemplo en francés": "Je n'arrive pas à le joindre sur son portable.",
+                "Ejemplo en español": "No logro localizarlo en su móvil."
+            },
+            {
+                "Término en español": "Adjuntar",
+                "Ejemplo en francés": "N'oubliez pas de joindre votre CV à l'e-mail.",
+                "Ejemplo en español": "No olvide adjuntar su CV al correo electrónico."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Joint",
+        "categoría": "Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Adjunto",
+                "Ejemplo en francés": "Veuillez trouver le document joint à ce message.",
+                "Ejemplo en español": "Por favor, encuentre el documento adjunto a este mensaje."
+            },
+            {
+                "Término en español": "Junta / Sello",
+                "Ejemplo en francés": "Il faut changer le joint du robinet car il fuit.",
+                "Ejemplo en español": "Hay que cambiar la junta del grifo porque gotea."
             }
         ]
     },
@@ -1299,22 +1407,6 @@
         ]
     },
     {
-        "Término en francés": "Pour rejoindre",
-        "categoría": "Transporte y Ciudad",
-        "definiciones": [
-            {
-                "Término en español": "Para unirse a",
-                "Ejemplo en francés": "Il a voyagé à Paris pour rejoindre sa famille.",
-                "Ejemplo en español": "Viajó a París para unirse a su familia."
-            },
-            {
-                "Término en español": "Para llegar a",
-                "Ejemplo en francés": "Prenez cette route pour rejoindre le centre-ville.",
-                "Ejemplo en español": "Tome esta carretera para llegar al centro de la ciudad."
-            }
-        ]
-    },
-    {
         "Término en francés": "Quand même",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
@@ -1375,6 +1467,18 @@
         ]
     },
     {
+        "Término en francés": "Recoudre",
+        "categoría": "Verbos",
+        "verbo_infinitivo": "Recoudre",
+        "definiciones": [
+            {
+                "Término en español": "Coser / Volver a coser",
+                "Ejemplo en francés": "Je dois recoudre le bouton de ma chemise qui est tombé.",
+                "Ejemplo en español": "Tengo que coser el botón de mi camisa que se cayó."
+            }
+        ]
+    },
+    {
         "Término en francés": "Recueillir",
         "categoría": "Trabajo y Negocios",
         "definiciones": [
@@ -1387,6 +1491,57 @@
                 "Término en español": "Obtener (información)",
                 "Ejemplo en francés": "La police a réussi à recueillir des informations cruciales.",
                 "Ejemplo en español": "La policía logró obtener información crucial."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Rejoindre",
+        "categoría": "Verbos",
+        "verbo_infinitivo": "Rejoindre",
+        "definiciones": [
+            {
+                "Término en español": "Reunirse con / Encontrarse con",
+                "Ejemplo en francés": "Je vous rejoins au restaurant dans dix minutes.",
+                "Ejemplo en español": "Me reúno con ustedes en el restaurante en diez minutos."
+            },
+            {
+                "Término en español": "Unirse a",
+                "Ejemplo en francés": "Il a décidé de rejoindre notre équipe de football.",
+                "Ejemplo en español": "Él decidió unirse a nuestro equipo de fútbol."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Relier",
+        "categoría": "Verbos",
+        "verbo_infinitivo": "Relier",
+        "definiciones": [
+            {
+                "Término en español": "Conectar / Unir",
+                "Ejemplo en francés": "Ce pont permet de relier les deux rives de la ville.",
+                "Ejemplo en español": "Este puente permite unir las dos orillas de la ciudad."
+            },
+            {
+                "Término en español": "Encuadernar",
+                "Ejemplo en francés": "Je vais faire relier mon manuscrit chez l'imprimeur.",
+                "Ejemplo en español": "Voy a mandar a encuadernar mi manuscrito a la imprenta."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Remettre",
+        "categoría": "Verbos",
+        "verbo_infinitivo": "Remettre",
+        "definiciones": [
+            {
+                "Término en español": "Entregar",
+                "Ejemplo en francés": "Le gagnant doit remettre son prix à la fin de la cérémonie.",
+                "Ejemplo en español": "El ganador debe entregar su premio al final de la ceremonia."
+            },
+            {
+                "Término en español": "Posponer / Aplazar",
+                "Ejemplo en francés": "On a dû remettre la réunion à la semaine prochaine.",
+                "Ejemplo en español": "Tuvimos que posponer la reunión para la semana que viene."
             }
         ]
     },
@@ -1418,7 +1573,7 @@
         ]
     },
     {
-        "Término en francés": "Ressembler",
+        "Término en francés": "Ressembler à",
         "categoría": "Conectores y Expresiones",
         "definiciones": [
             {
@@ -1709,6 +1864,22 @@
         ]
     },
     {
+        "Término en francés": "Tenue",
+        "categoría": "Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Atuendo / Ropa",
+                "Ejemplo en francés": "Il porte une tenue décontractée pour la fête.",
+                "Ejemplo en español": "Él lleva un atuendo informal para la fiesta."
+            },
+            {
+                "Término en español": "Comportamiento / Actitud",
+                "Ejemplo en francés": "Une tenue correcte est exigée dans cet établissement.",
+                "Ejemplo en español": "Se exige un comportamiento correcto en este establecimiento."
+            }
+        ]
+    },
+    {
         "Término en francés": "Tire",
         "categoría": "General",
         "verbo_infinitivo": "Tirer",
@@ -1739,6 +1910,23 @@
                 "Término en español": "Enseguida / Inmediatamente",
                 "Ejemplo en francés": "Veuillez me contacter tout de suite après votre arrivée.",
                 "Ejemplo en español": "Por favor, póngase en contacto conmigo enseguida después de su llegada."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Traiter",
+        "categoría": "Verbos",
+        "verbo_infinitivo": "Traiter",
+        "definiciones": [
+            {
+                "Término en español": "Tratar / Atender",
+                "Ejemplo en francés": "Le service client va traiter votre demande rapidement.",
+                "Ejemplo en español": "El servicio al cliente tratará su solicitud rápidamente."
+            },
+            {
+                "Término en español": "Procesar",
+                "Ejemplo en francés": "L'ordinateur met du temps à traiter ces données.",
+                "Ejemplo en español": "El ordenador tarda en procesar estos datos."
             }
         ]
     },
