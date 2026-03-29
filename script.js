@@ -1,267 +1,301 @@
+/* 
+  Lumière Académie | script.js
+  Logic for 3D Flashcard study system with Focus Mode.
+  Optimized for multi-definition JSON schema.
+*/
+
 let allFlashcards = [];
-let flashcards = [];
-let current = 0;
-let learnedTerms = JSON.parse(localStorage.getItem('learnedTerms')) || [];
+let currentFlashcardIndex = 0;
+let filteredFlashcards = [];
 let currentFilter = 'all';
-
-// Cargar datos
-async function init() {
-    try {
-        const response = await fetch('vocabulario.json');
-        allFlashcards = await response.json();
-
-        // Ordenar alfabéticamente por término francés
-        allFlashcards.sort((a, b) =>
-            a["Término en francés"].localeCompare(b["Término en francés"], 'fr', { sensitivity: 'base' })
-        );
-
-        applyFilter();
-    } catch (error) {
-        console.error('Error cargando JSON:', error);
-        const cardElement = document.getElementById('flashcard');
-        if (cardElement) {
-            cardElement.innerHTML = '<p style="color:red">Error al cargar datos. Asegúrate de que vocabulario.json exista y esté en la misma carpeta.</p>';
-        }
-    }
-}
-
-function speak(text) {
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const utter = new SpeechSynthesisUtterance(text);
-
-        const voices = window.speechSynthesis.getVoices();
-        
-        // Buscar la voz francesa con más prioridad (Google, Natural, etc.)
-        const frVoices = voices.filter(v => v.lang.startsWith('fr'));
-        frVoices.sort((a, b) => {
-            const score = (v) => {
-                let s = 0;
-                const name = v.name.toLowerCase();
-                if (name.includes('google')) s += 10;
-                if (name.includes('natural')) s += 8;
-                if (name.includes('online')) s += 5;
-                if (name.includes('ca')) s += 2;
-                return s;
-            };
-            return score(b) - score(a);
-        });
-
-        const voice = frVoices[0];
-
-        if (voice) {
-            utter.voice = voice;
-            utter.lang = voice.lang; 
-        } else {
-            utter.lang = 'fr-FR';
-        }
-
-        utter.rate = 0.9;
-        window.speechSynthesis.speak(utter);
-    }
-}
-
-function showCard(idx) {
-    if (!flashcards.length) return;
-
-    const card = flashcards[idx];
-    const container = document.getElementById('flashcard');
-    if (!container) return;
-
-    const innerContent = container.querySelector('.card-content');
-    if (innerContent) {
-        innerContent.classList.add('fade-out-content');
-    }
-
-    setTimeout(() => {
-        const terminoFr = card["Término en francés"];
-        const palabraEscaped = terminoFr.replace(/'/g, "\\'");
-
-        const isLearned = learnedTerms.includes(terminoFr);
-
-        let html = `
-            <button class="sound-btn-main" onclick="speak('${palabraEscaped}')" title="Escuchar término">🔊</button>
-            <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
-                    onclick="toggleLearned('${palabraEscaped}')" 
-                    title="${isLearned ? 'Marcar como pendiente' : 'Marcar como aprendida'}">
-                ✅
-            </button>
-            <div class="card-content">
-            <div class="word-fr">${terminoFr}</div>
-        `;
-
-        if (card.verbo_infinitivo) {
-            html += `<div class="word-infinitive">${card.verbo_infinitivo}</div>`;
-        }
-
-        if (card.definiciones) {
-            const definitionsToShow = card.definiciones.slice(0, 2);
-            definitionsToShow.forEach((def, i) => {
-                if (i > 0) html += '<hr>';
-                const oracionEscaped = def["Ejemplo en francés"].replace(/'/g, "\\'");
-                html += `
-                    <div class="def-container">
-                        <div class="word-es">${def["Término en español"]}</div>
-                        <div class="sentence-group">
-                            <div class="sentence-fr-row">
-                                <span>${def["Ejemplo en francés"]}</span>
-                                <button class="mini-sound-btn" onclick="speak('${oracionEscaped}')" title="Escuchar ejemplo">🗣️</button>
-                            </div>
-                            <div class="sentence-es">${def["Ejemplo en español"]}</div>
-                        </div>
-                    </div>
-                `;
-            });
-        }
-
-        html += `</div>`;
-
-        container.innerHTML = html;
-        
-        // Actualizar contador externo
-        const externalCounter = document.getElementById('counterExternal');
-        if (externalCounter) {
-            externalCounter.textContent = `${idx + 1} / ${flashcards.length}`;
-        }
-    }, 150);
-}
-
-function nextCard() {
-    if (!flashcards.length) return;
-    current = (current + 1) % flashcards.length;
-    showCard(current);
-}
-
-function prevCard() {
-    if (!flashcards.length) return;
-    current = (current - 1 + flashcards.length) % flashcards.length;
-    showCard(current);
-}
-
-function randomCard() {
-    if (flashcards.length < 2) return;
-    let rand;
-    do {
-        rand = Math.floor(Math.random() * flashcards.length);
-    } while (rand === current);
-    current = rand;
-    showCard(current);
-}
-
-function setFilter(filterType) {
-    currentFilter = filterType;
-    
-    // UI: Actualizar botones activos
-    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-    const activeBtn = document.getElementById(`filter-${filterType}`);
-    if (activeBtn) activeBtn.classList.add('active');
-
-    applyFilter();
-}
-
-function applyFilter() {
-    const searchInput = document.getElementById('searchInput');
-    const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
-
-    flashcards = allFlashcards.filter(card => {
-        // Filtrar por estado (dominadas / pendientes)
-        let statusMatch = true;
-        if (currentFilter === 'learned') {
-            statusMatch = learnedTerms.includes(card["Término en francés"]);
-        } else if (currentFilter === 'pending') {
-            statusMatch = !learnedTerms.includes(card["Término en francés"]);
-        }
-
-        // Filtrar por término de búsqueda (frances o español)
-        let searchMatch = true;
-        if (searchTerm !== '') {
-            const termFr = card["Término en francés"].toLowerCase();
-            const termInf = (card.verbo_infinitivo || "").toLowerCase();
-            const hasDefMatch = card.definiciones && card.definiciones.some(def => 
-                def["Término en español"].toLowerCase().includes(searchTerm)
-            );
-            searchMatch = termFr.includes(searchTerm) || termInf.includes(searchTerm) || hasDefMatch;
-        }
-
-        return statusMatch && searchMatch;
-    });
-
-    current = 0;
-    if (flashcards.length > 0) {
-        showCard(0);
-    } else {
-        const container = document.getElementById('flashcard');
-        if (container) {
-            container.innerHTML = `<p class="no-data">No hay resultados para tu búsqueda.</p>`;
-        }
-        const externalCounter = document.getElementById('counterExternal');
-        if (externalCounter) externalCounter.textContent = `0 / 0`;
-    }
-}
-
-function toggleLearned(term) {
-    const index = learnedTerms.indexOf(term);
-    if (index > -1) {
-        learnedTerms.splice(index, 1);
-    } else {
-        learnedTerms.push(term);
-    }
-    
-    localStorage.setItem('learnedTerms', JSON.stringify(learnedTerms));
-    
-    // Si estamos en un filtro activo y la palabra ya no coincide, refrescar
-    if (currentFilter !== 'all') {
-        applyFilter();
-    } else {
-        showCard(current); // Solo refrescar la visual de la tarjeta actual
-    }
-}
+let learnedTerms = JSON.parse(localStorage.getItem('learnedTerms')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Tema
-    const themeToggle = document.getElementById('themeToggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌓';
-            localStorage.setItem('theme', newTheme);
-        });
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌓';
-        }
-    }
-
-    // Evento para el buscador
     const searchInput = document.getElementById('searchInput');
     const clearSearchBtn = document.getElementById('clearSearchBtn');
-    
-    if (searchInput) {
-        searchInput.addEventListener('input', () => {
-            if (clearSearchBtn) {
-                clearSearchBtn.style.display = searchInput.value.length > 0 ? 'flex' : 'none';
-            }
-            applyFilter();
-        });
-        
-        if (clearSearchBtn) {
-            clearSearchBtn.addEventListener('click', () => {
-                searchInput.value = '';
-                clearSearchBtn.style.display = 'none';
-                applyFilter();
-                searchInput.focus();
-            });
-        }
+    const themeToggle = document.getElementById('themeToggle');
+
+    // Inicializar Tema
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
     }
 
-    // Asegurarse de cargar las voces localmente en background para que estén listas
-    if ('speechSynthesis' in window) {
-        // Un simple getVoices() triggerea la carga en Chrome
-        window.speechSynthesis.getVoices();
+    themeToggle.addEventListener('click', () => {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        const newTheme = isLight ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        clearSearchBtn.style.display = query ? 'flex' : 'none';
+        applyFilter();
+        
+        // Salir de modo foco al buscar
+        document.querySelector('.header').classList.remove('focus-mode');
+        document.querySelector('.search-container').classList.remove('focus-mode');
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearchBtn.style.display = 'none';
+        applyFilter();
+        searchInput.focus();
+    });
+
+    async function init() {
+        try {
+            const response = await fetch('vocabulario.json');
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+            
+            // Validar que sea un array
+            allFlashcards = (Array.isArray(data) ? data : []).sort((a, b) => 
+                a["Término en francés"].localeCompare(b["Término en francés"])
+            );
+            
+            applyFilter();
+        } catch (error) {
+            console.error('Error cargando vocabulario:', error);
+            document.getElementById('flashcard').innerHTML = `<p class="no-data">Error al cargar datos.<br><small style="opacity:0.5">${error.message}</small></p>`;
+        }
     }
 
     init();
 });
+
+function applyFilter() {
+    const query = (document.getElementById('searchInput')?.value || '').toLowerCase();
+    
+    filteredFlashcards = allFlashcards.filter(card => {
+        const termFr = (card["Término en francés"] || '').toLowerCase();
+        
+        // Buscar en el término principal y en todas las definiciones
+        const definitionsMatch = card.definiciones ? card.definiciones.some(d => 
+            (d["Término en español"] || '').toLowerCase().includes(query)
+        ) : false;
+
+        const matchesSearch = termFr.includes(query) || definitionsMatch;
+        
+        if (currentFilter === 'pending') {
+            return matchesSearch && !learnedTerms.includes(card["Término en francés"]);
+        } else if (currentFilter === 'learned') {
+            return matchesSearch && learnedTerms.includes(card["Término en francés"]);
+        }
+        return matchesSearch;
+    });
+
+    currentFlashcardIndex = 0;
+    updateCounter();
+    showCard();
+}
+
+function setFilter(filter) {
+    currentFilter = filter;
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.id === `filter-${filter}`);
+    });
+    applyFilter();
+}
+
+function flipCard() {
+    const card = document.getElementById('flashcard');
+    if (!card) return;
+    card.classList.toggle('flipped');
+    
+    // Activar Modo Foco al interactuar (solo si hay datos)
+    if (filteredFlashcards.length > 0) {
+        document.querySelector('.header').classList.add('focus-mode');
+        document.querySelector('.search-container').classList.add('focus-mode');
+    }
+}
+
+function showCard() {
+    const front = document.getElementById('flashcardFront');
+    const back = document.getElementById('flashcardBack');
+    const cardElement = document.getElementById('flashcard');
+    
+    if (!front || !back || !cardElement) return;
+
+    // Resetear rotación
+    cardElement.classList.remove('flipped');
+
+    if (filteredFlashcards.length === 0) {
+        front.innerHTML = '<p class="no-data">No hay palabras disponibles.</p>';
+        back.style.display = 'none';
+        return;
+    }
+
+    back.style.display = 'flex';
+    const card = filteredFlashcards[currentFlashcardIndex];
+    const isLearned = learnedTerms.includes(card["Término en francés"]);
+
+    // CARA FRONTAL
+    front.innerHTML = `
+        <button class="sound-btn-main" onclick="event.stopPropagation(); speak('${card["Término en francés"].replace(/'/g, "\\'")}')" title="Escuchar">🔊</button>
+        <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
+                onclick="event.stopPropagation(); toggleLearned('${card["Término en francés"].replace(/'/g, "\\'")}')" title="¿Aprendida?">
+            ${isLearned ? '✅' : '⚪'}
+        </button>
+        <h1 class="word-fr">${card["Término en francés"]}</h1>
+        <div class="flip-hint">Toca para descubrir el significado</div>
+    `;
+
+    // CARA POSTERIOR (Múltiples definiciones)
+    let contentHtml = `<div class="word-fr-small">${card["Término en francés"]}</div>`;
+    
+    if (card.verbo_infinitivo) {
+        contentHtml += `<div class="word-infinitive">${card.verbo_infinitivo}</div>`;
+    }
+
+    if (card.definiciones && card.definiciones.length > 0) {
+        contentHtml += card.definiciones.map(def => `
+            <div class="def-block" style="width:100%; margin-bottom: 20px;">
+                <div class="word-es">${def["Término en español"]}</div>
+                <div class="sentence-group">
+                    <div class="sentence-fr-row">
+                        <button class="mini-sound-btn" onclick="event.stopPropagation(); speak('${def["Ejemplo en francés"].replace(/'/g, "\\'")}')">🔊</button>
+                        <span>${def["Ejemplo en francés"]}</span>
+                    </div>
+                    <div class="sentence-es">${def["Ejemplo en español"]}</div>
+                </div>
+            </div>
+        `).join('<hr style="margin: 15px 0; opacity: 0.1;">');
+    }
+
+    back.innerHTML = `<div class="card-content" style="width:100%">${contentHtml}</div>`;
+
+    updateCounter();
+}
+
+function nextCard() {
+    if (filteredFlashcards.length === 0) return;
+    currentFlashcardIndex = (currentFlashcardIndex + 1) % filteredFlashcards.length;
+    showCard();
+}
+
+function prevCard() {
+    if (filteredFlashcards.length === 0) return;
+    currentFlashcardIndex = (currentFlashcardIndex - 1 + filteredFlashcards.length) % filteredFlashcards.length;
+    showCard();
+}
+
+function randomCard() {
+    if (filteredFlashcards.length === 0) return;
+    currentFlashcardIndex = Math.floor(Math.random() * filteredFlashcards.length);
+    showCard();
+}
+
+function updateCounter() {
+    const counter = document.getElementById('cardCounter');
+    if (!counter) return;
+    if (filteredFlashcards.length === 0) {
+        counter.textContent = '0 / 0';
+    } else {
+        counter.textContent = `${currentFlashcardIndex + 1} / ${filteredFlashcards.length}`;
+    }
+}
+
+function toggleLearned(term) {
+    if (learnedTerms.includes(term)) {
+        learnedTerms = learnedTerms.filter(t => t !== term);
+    } else {
+        learnedTerms.push(term);
+    }
+    localStorage.setItem('learnedTerms', JSON.stringify(learnedTerms));
+    showCard();
+}
+
+function speak(text) {
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'fr-FR';
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+}
+
+// ESTADÍSTICAS
+function toggleView() {
+    const study = document.getElementById('studyContainer');
+    const stats = document.getElementById('statsContainer');
+    const toggleBtn = document.getElementById('statsToggle');
+    
+    if (stats.style.display === 'none') {
+        renderStats();
+        study.style.display = 'none';
+        stats.style.display = 'block';
+        toggleBtn.textContent = '🎴';
+        document.querySelector('.header').classList.remove('focus-mode');
+    } else {
+        study.style.display = 'block';
+        stats.style.display = 'none';
+        toggleBtn.textContent = '📊';
+    }
+}
+
+function renderStats() {
+    const total = allFlashcards.length;
+    const learned = learnedTerms.length;
+    const percentage = total > 0 ? Math.round((learned / total) * 100) : 0;
+    
+    const categories = {};
+    allFlashcards.forEach(card => {
+        const cat = card.categoría || 'General';
+        if (!categories[cat]) categories[cat] = { total: 0, learned: 0 };
+        categories[cat].total++;
+        if (learnedTerms.includes(card["Término en francés"])) {
+            categories[cat].learned++;
+        }
+    });
+
+    const statsView = document.getElementById('statsView');
+    const strokeDashoffset = 440 - (440 * percentage) / 100;
+
+    let categoriesHtml = '';
+    for (const [name, data] of Object.entries(categories)) {
+        const catPerc = Math.round((data.learned / data.total) * 100);
+        categoriesHtml += `
+            <div class="cat-item">
+                <div class="cat-info">
+                    <span>${name}</span>
+                    <span>${data.learned}/${data.total} (${catPerc}%)</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar-fill" style="width: ${catPerc}%"></div>
+                </div>
+            </div>
+        `;
+    }
+
+    const recentTerms = learnedTerms.slice(-6).reverse();
+    let recentHtml = recentTerms.map(t => `<span class="recent-tag">${t}</span>`).join('');
+
+    statsView.innerHTML = `
+        <div class="mastery-hero">
+            <div class="progress-circle">
+                <svg>
+                    <circle class="bg" cx="80" cy="80" r="70"></circle>
+                    <circle class="bar" cx="80" cy="80" r="70" style="stroke-dashoffset: ${strokeDashoffset}"></circle>
+                </svg>
+                <div class="percentage-text">${percentage}%</div>
+            </div>
+            <div class="stat-label">Maestría Total</div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">${total}</div>
+                <div class="stat-label">Total Vocabulario</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${learned}</div>
+                <div class="stat-label">Aprendidas</div>
+            </div>
+        </div>
+        <div class="category-stats">
+            <h3>Temas</h3>
+            <div class="category-list">${categoriesHtml}</div>
+        </div>
+        ${recentTerms.length > 0 ? `<div class="recent-mastery"><div class="recent-list">${recentHtml}</div></div>` : ''}
+    `;
+}
