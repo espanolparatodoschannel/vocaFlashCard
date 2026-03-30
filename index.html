@@ -13,18 +13,30 @@
     rel="stylesheet">
   <!-- Estilos Externos -->
   <link rel="stylesheet" href="styles.css?v=2.0">
+  <!-- Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
   <div class="header">
     <div class="filter-container">
-      <button class="filter-btn active" id="filter-all" onclick="setFilter('all')" title="Todas">📚</button>
-      <button class="filter-btn" id="filter-pending" onclick="setFilter('pending')" title="Pendientes">⏳</button>
-      <button class="filter-btn" id="filter-learned" onclick="setFilter('learned')" title="Aprendidas">✅</button>
+      <button class="filter-btn active" id="filter-all" onclick="setFilter('all')" title="Todas">
+        <i data-lucide="layers"></i>
+      </button>
+      <button class="filter-btn" id="filter-pending" onclick="setFilter('pending')" title="Pendientes">
+        <i data-lucide="clock"></i>
+      </button>
+      <button class="filter-btn" id="filter-learned" onclick="setFilter('learned')" title="Aprendidas">
+        <i data-lucide="check-circle-2"></i>
+      </button>
     </div>
     <div class="header-actions">
-      <button class="header-btn" id="statsToggle" onclick="toggleView()" title="Estadísticas">📊</button>
-      <button class="theme-toggle" id="themeToggle" title="Tema">🌓</button>
+      <button class="header-btn" id="statsToggle" onclick="toggleView()" title="Estadísticas">
+        <i data-lucide="bar-chart-3"></i>
+      </button>
+      <button class="theme-toggle" id="themeToggle" title="Tema">
+        <i data-lucide="sun-moon"></i>
+      </button>
     </div>
   </div>
 
@@ -56,13 +68,13 @@
     <div class="controls">
       <div class="nav-buttons">
         <button class="btn-action" onclick="prevCard()" title="Anterior">
-          <span class="icon">←</span>
+          <i data-lucide="chevron-left"></i>
         </button>
         <button class="btn-action" onclick="randomCard()" title="Aleatorio">
-          <span class="icon">🎲</span>
+          <i data-lucide="shuffle"></i>
         </button>
         <button class="btn-action" onclick="nextCard()" title="Siguiente">
-          <span class="icon">→</span>
+          <i data-lucide="chevron-right"></i>
         </button>
       </div>
       <div class="counter-external" id="cardCounter">0 / 0</div>

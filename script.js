@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
             
             applyFilter();
+            lucide.createIcons(); // Inicializar iconos Lucide
         } catch (error) {
             console.error('Error cargando vocabulario:', error);
             document.getElementById('flashcard').innerHTML = `<p class="no-data">Error al cargar datos.<br><small style="opacity:0.5">${error.message}</small></p>`;
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     init();
+    lucide.createIcons(); // Carga iconos estáticos del index
 });
 
 function applyFilter() {
@@ -135,11 +137,12 @@ function showCard() {
     front.innerHTML = `
         <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
                 onclick="event.stopPropagation(); toggleLearned('${card["Término en francés"].replace(/'/g, "\\'")}')" title="¿Aprendida?">
-            ${isLearned ? '✅' : '⚪'}
+            <i data-lucide="${isLearned ? 'check-circle' : 'circle'}"></i>
         </button>
         <h1 class="word-fr speakable" onclick="event.stopPropagation(); speak('${card["Término en francés"].replace(/'/g, "\\'")}')">${card["Término en francés"]}</h1>
         <div class="flip-hint">Toca para descubrir el significado</div>
     `;
+    lucide.createIcons();
 
     // CARA POSTERIOR (Múltiples definiciones)
     let contentHtml = `<div class="word-fr-small">${card["Término en francés"]}</div>`;
@@ -223,12 +226,14 @@ function toggleView() {
         renderStats();
         study.style.display = 'none';
         stats.style.display = 'block';
-        toggleBtn.textContent = '🎴';
+        toggleBtn.innerHTML = '<i data-lucide="layout"></i>';
+        lucide.createIcons();
         document.querySelector('.header').classList.remove('focus-mode');
     } else {
         study.style.display = 'block';
         stats.style.display = 'none';
-        toggleBtn.textContent = '📊';
+        toggleBtn.innerHTML = '<i data-lucide="bar-chart-3"></i>';
+        lucide.createIcons();
     }
 }
 
@@ -248,7 +253,6 @@ function renderStats() {
     });
 
     const statsView = document.getElementById('statsView');
-    const strokeDashoffset = 440 - (440 * percentage) / 100;
 
     let categoriesHtml = '';
     for (const [name, data] of Object.entries(categories)) {
