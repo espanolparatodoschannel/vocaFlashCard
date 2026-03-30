@@ -138,8 +138,12 @@ body::before {
 
 .filter-btn.active {
     background: var(--surface-container-highest);
-    color: var(--primary); /* El icono resalta sutilmente */
+    color: var(--primary); /* El icono resalta en morado suave */
     transform: scale(1.05);
+}
+
+.filter-btn svg, .header-btn svg, .theme-toggle svg {
+    color: var(--on-surface); /* Fuerza visibilidad de iconos */
 }
 
 .header-actions {
