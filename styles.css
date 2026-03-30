@@ -242,15 +242,20 @@ body::before {
 .flashcard-back { transform: rotateY(180deg); justify-content: flex-start; }
 
 /* REFUERZO DE COLOR DE CINTA SUPERIOR */
-.flashcard-front::before, .flashcard-back::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to right, var(--primary), var(--primary-container));
-    border-radius: 40px 40px 0 0;
+/* CLICKABLE TEXT FOR AUDIO */
+.speakable {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    user-select: none;
+}
+
+.speakable:active {
+    transform: scale(0.96) !important;
+    opacity: 0.7;
+}
+
+.speakable:hover {
+    color: var(--primary);
 }
 
 /* TEXT STYLES */
@@ -277,37 +282,15 @@ body::before {
     text-align: center;
 }
 
-/* AUDIO BUTTONS - CERO BORDES / CERO CONTORNOS */
-.sound-btn-main {
+.flashcard-front::before, .flashcard-back::before {
+    content: "";
     position: absolute;
-    top: 24px;
-    left: 24px;
-    background: var(--primary);
-    color: var(--on-primary);
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    width: 48px;
-    height: 48px;
-    border-radius: 16px;
-    cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    z-index: 10;
-}
-
-.mini-sound-btn {
-    background: var(--surface-container-highest);
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    color: var(--on-surface);
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.85rem;
-    flex-shrink: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, var(--primary), var(--primary-container));
+    border-radius: 40px 40px 0 0;
 }
 
 .sentence-group {

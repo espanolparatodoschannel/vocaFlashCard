@@ -133,12 +133,11 @@ function showCard() {
 
     // CARA FRONTAL
     front.innerHTML = `
-        <button class="sound-btn-main" onclick="event.stopPropagation(); speak('${card["Término en francés"].replace(/'/g, "\\'")}')" title="Escuchar">🔊</button>
         <button class="learned-toggle ${isLearned ? 'is-learned' : ''}" 
                 onclick="event.stopPropagation(); toggleLearned('${card["Término en francés"].replace(/'/g, "\\'")}')" title="¿Aprendida?">
             ${isLearned ? '✅' : '⚪'}
         </button>
-        <h1 class="word-fr">${card["Término en francés"]}</h1>
+        <h1 class="word-fr speakable" onclick="event.stopPropagation(); speak('${card["Término en francés"].replace(/'/g, "\\'")}')">${card["Término en francés"]}</h1>
         <div class="flip-hint">Toca para descubrir el significado</div>
     `;
 
@@ -154,8 +153,7 @@ function showCard() {
             <div class="def-block" style="width:100%; margin-bottom: 20px;">
                 <div class="word-es">${def["Término en español"]}</div>
                 <div class="sentence-group">
-                    <div class="sentence-fr-row">
-                        <button class="mini-sound-btn" onclick="event.stopPropagation(); speak('${def["Ejemplo en francés"].replace(/'/g, "\\'")}')">🔊</button>
+                    <div class="sentence-fr-row speakable" onclick="event.stopPropagation(); speak('${def["Ejemplo en francés"].replace(/'/g, "\\'")}')">
                         <span>${def["Ejemplo en francés"]}</span>
                     </div>
                     <div class="sentence-es">${def["Ejemplo en español"]}</div>
