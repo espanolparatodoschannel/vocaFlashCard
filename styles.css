@@ -384,4 +384,5 @@ body::before {
 .stat-label { font-size: 0.9rem; color: var(--on-surface-variant); text-transform: uppercase; font-weight: 700; }
 .category-stats { background: var(--surface-container-high); padding: 24px; border-radius: 28px; margin-top: 20px; }
 .bar-container { height: 10px; background: var(--surface-container); border-radius: 5px; overflow: hidden; margin-top: 8px; }
-.bar-fill { height: 100%; background: linear-gradient(to right, var(--primary-container), var(--primary)); }
+.bar-fill { height: 100%; background: linear-gradient(to right, var(--primary-container), var(--primary)); }/ *   A N I M A C I O N E S   P R E M I U M   * /   @ k e y f r a m e s   s l i d e I n   {   f r o m   {   o p a c i t y :   0 ;   t r a n s f o r m :   t r a n s l a t e Y ( 2 0 p x )   s c a l e ( 0 . 9 8 ) ;   }   t o   {   o p a c i t y :   1 ;   t r a n s f o r m :   t r a n s l a t e Y ( 0 )   s c a l e ( 1 ) ;   }   }  
+ 
