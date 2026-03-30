@@ -299,11 +299,20 @@ body::before {
 }
 
 .word-es {
-    font-size: 1.5rem; /* Más pequeño para ahorrar verticalidad */
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--primary);
-    margin-bottom: 8px; /* Reducción de margen */
+    margin-bottom: 2px; /* Reducción extrema para pegar el subtexto */
     text-align: center;
+}
+
+.word-es-sub {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--on-surface-variant);
+    opacity: 0.8;
+    text-align: center;
+    line-height: 1.3;
 }
 
 

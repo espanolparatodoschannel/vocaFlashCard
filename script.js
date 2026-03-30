@@ -152,7 +152,19 @@ function showCard() {
     if (card.definiciones && card.definiciones.length > 0) {
         contentHtml += card.definiciones.map(def => `
             <div class="def-block" style="width:100%; margin-bottom: 20px;">
-                <div class="word-es">${def["Término en español"]}</div>
+                <div class="es-container" style="text-align: center; margin-bottom: 12px;">
+                    ${(() => {
+                        const esTerm = def["Término en español"];
+                        const match = esTerm.match(/^(.*?)\((.*?)\)$/);
+                        if (match) {
+                            return `
+                                <div class="word-es">${match[1].trim()}</div>
+                                <div class="word-es-sub">(${match[2].trim()})</div>
+                            `;
+                        }
+                        return `<div class="word-es">${esTerm}</div>`;
+                    })()}
+                </div>
                 <div class="sentence-group">
                     <div class="sentence-fr-row speakable" onclick="event.stopPropagation(); speak('${def["Ejemplo en francés"].replace(/'/g, "\\'")}')">
                         <span>${def["Ejemplo en francés"]}</span>
