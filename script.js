@@ -160,7 +160,7 @@ function showCard() {
                     <div class="sentence-es">${def["Ejemplo en español"]}</div>
                 </div>
             </div>
-        `).join('<hr style="margin: 15px 0; opacity: 0.1;">');
+        `).join('<hr style="margin: 5px 0; opacity: 0.1;">');
     }
 
     back.innerHTML = `<div class="card-content" style="width:100%">${contentHtml}</div>`;

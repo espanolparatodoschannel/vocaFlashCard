@@ -251,13 +251,13 @@ body::before {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 40px;
-    padding: 40px 24px;
+    padding: 30px 20px; /* Reducción de padding para ganar espacio */
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--surface-container-high);
     border: 1px solid var(--glass-border);
-    overflow-y: auto;
+    overflow: hidden; /* Eliminar scroll */
 }
 
 .flashcard-front::-webkit-scrollbar, .flashcard-back::-webkit-scrollbar { display: none; }
@@ -299,19 +299,19 @@ body::before {
 }
 
 .word-es {
-    font-size: 1.8rem;
+    font-size: 1.5rem; /* Más pequeño para ahorrar verticalidad */
     font-weight: 800;
     color: var(--primary);
-    margin-bottom: 20px;
+    margin-bottom: 8px; /* Reducción de margen */
     text-align: center;
 }
 
 
 .sentence-group {
     background: var(--surface-container-low);
-    padding: 16px;
-    border-radius: 20px;
-    margin-bottom: 12px;
+    padding: 10px 12px; /* Super compacto */
+    border-radius: 16px;
+    margin-bottom: 8px;
 }
 
 .learned-toggle {
