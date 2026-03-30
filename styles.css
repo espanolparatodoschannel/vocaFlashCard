@@ -298,58 +298,67 @@ body::before {
 }
 .learned-toggle.is-learned { opacity: 1; transform: scale(1.1); }
 
-/* CONTROLES FIJOS E INAMOVIBLES AL FINAL */
+/* CONTROLES UNIFICADOS (MISMO ESTILO QUE HEADER) */
 .controls {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    max-width: none; /* Ocupa todo el centro */
-    padding: 30px 20px 45px; /* Margen para seguridad táctil */
-    background: linear-gradient(to top, var(--bg-main) 70%, transparent); /* Gradiente de fondo */
+    padding: 30px 20px 45px;
+    background: linear-gradient(to top, var(--bg-main) 60%, transparent);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     z-index: 1000;
+    pointer-events: none; /* Dejar pasar clics al fondo si no se toca la barra */
 }
 
-.nav-buttons {
+.nav-buttons-container {
     display: flex;
-    gap: 12px;
     align-items: center;
+    gap: 8px;
+    background: var(--glass-bg);
+    padding: 8px 16px;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    pointer-events: auto; /* Reactivar clics en la barra */
 }
 
 .btn-action {
-    background: var(--surface-container);
-    border: 1px solid var(--glass-border);
+    background: none;
+    border: none;
     color: var(--on-surface);
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
-    font-size: 1.8rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    font-size: 1.35rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    pointer-events: auto;
+}
+
+.btn-action:active {
+    background: var(--primary);
+    color: var(--on-primary);
+    transform: scale(0.9);
 }
 
 .counter-external {
     font-family: var(--font-heading);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--primary);
-    background: var(--glass-bg);
-    height: 60px;
-    padding: 0 18px;
-    border-radius: 20px;
-    border: 1px solid var(--glass-border);
+    padding: 0 12px;
+    border-left: 1px solid var(--glass-border);
+    height: 24px;
     display: flex;
     align-items: center;
-    backdrop-filter: blur(10px);
+    margin-left: 4px;
 }
 
 /* FRASES EN NEGRITA */
