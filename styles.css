@@ -174,7 +174,9 @@ body::before {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Subir componentes */
+    padding-top: 10px; /* Separación leve del header */
+    margin-top: -30px; /* Elevación dinámica */
     padding-bottom: 20px;
 }
 
