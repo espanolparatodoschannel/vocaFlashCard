@@ -113,7 +113,7 @@ body::before {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    padding: 20px 0;
+    padding: 10px 0; /* Espacio reducido */
 }
 
 .filter-container {
@@ -187,17 +187,14 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* Mantener tendencia arriba */
-    padding-top: 25px;
-    /* Distancia de seguridad para el header */
+    padding-top: 10px; /* Elevado */
     margin-top: 0;
-    /* Sin elevación agresiva */
     padding-bottom: 20px;
 }
 
 /* SEARCH */
 .search-container {
-    margin-bottom: 24px;
+    margin-bottom: 16px; /* Más compacto */
     position: relative;
     display: flex;
     align-items: center;
@@ -251,7 +248,7 @@ body::before {
     width: 100%;
     flex-grow: 1;
     max-height: 60vh;
-    margin: 0 auto 20px;
+    margin: 0 auto 12px; /* Más pegado arriba */
     cursor: pointer;
 }
 
