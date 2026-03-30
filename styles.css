@@ -298,15 +298,20 @@ body::before {
 }
 .learned-toggle.is-learned { opacity: 1; transform: scale(1.1); }
 
-/* CONTROLS PERFECTAMENTE ALINEADOS */
+/* CONTROLES FIJOS E INAMOVIBLES AL FINAL */
 .controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-width: 480px;
-    padding-bottom: 30px;
+    max-width: none; /* Ocupa todo el centro */
+    padding: 30px 20px 45px; /* Margen para seguridad táctil */
+    background: linear-gradient(to top, var(--bg-main) 70%, transparent); /* Gradiente de fondo */
     display: flex;
-    justify-content: center; /* Centrado total */
+    justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
+    z-index: 1000;
 }
 
 .nav-buttons {
@@ -316,7 +321,7 @@ body::before {
 }
 
 .btn-action {
-    background: var(--glass-bg);
+    background: var(--surface-container);
     border: 1px solid var(--glass-border);
     color: var(--on-surface);
     width: 60px;
@@ -324,9 +329,12 @@ body::before {
     border-radius: 20px;
     font-size: 1.8rem;
     cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    pointer-events: auto;
 }
 
 .counter-external {
@@ -335,12 +343,13 @@ body::before {
     font-weight: 700;
     color: var(--primary);
     background: var(--glass-bg);
-    height: 60px; /* Misma altura que botones */
+    height: 60px;
     padding: 0 18px;
     border-radius: 20px;
     border: 1px solid var(--glass-border);
     display: flex;
     align-items: center;
+    backdrop-filter: blur(10px);
 }
 
 /* FRASES EN NEGRITA */
