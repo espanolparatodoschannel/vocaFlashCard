@@ -176,7 +176,7 @@ body::before {
 
 /* SEARCH */
 .search-container {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     position: relative;
     display: flex;
     align-items: center;
@@ -184,7 +184,7 @@ body::before {
 
 .search-container input {
     width: 100%;
-    padding: 14px 45px 14px 24px;
+    padding: 14px 45px 14px 48px; /* Espacio para lupa (izq) y X (der) */
     border-radius: 18px;
     border: 1px solid var(--glass-border);
     background: var(--glass-bg);
@@ -192,13 +192,31 @@ body::before {
     font-size: 1rem;
     outline: none;
     backdrop-filter: blur(10px);
+    transition: var(--transition);
 }
 
 .search-icon {
     position: absolute;
-    right: 20px;
+    left: 18px; /* Lupa a la izquierda */
     opacity: 0.6;
+    pointer-events: none;
 }
+
+.clear-search-btn {
+    position: absolute;
+    right: 14px; /* X a la derecha */
+    background: none;
+    border: none;
+    color: var(--on-surface);
+    cursor: pointer;
+    opacity: 0.6;
+    display: none; /* Se activa por JS */
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.clear-search-btn:hover { opacity: 1; }
 
 /* FLASHCARD */
 .flashcard-wrapper {
