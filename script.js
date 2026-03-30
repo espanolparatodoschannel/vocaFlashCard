@@ -142,7 +142,6 @@ function showCard() {
             <i data-lucide="${isLearned ? 'check-circle' : 'circle'}"></i>
         </button>
         <h1 class="word-fr speakable" onclick="event.stopPropagation(); speak('${card["Término en francés"].replace(/'/g, "\\'")}')">${card["Término en francés"]}</h1>
-        <div class="flip-hint">Toca para descubrir el significado</div>
     `;
     lucide.createIcons();
 
