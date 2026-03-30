@@ -106,10 +106,12 @@ function flipCard() {
     if (!card) return;
     card.classList.toggle('flipped');
     
-    // Activar Modo Foco al interactuar (solo si hay datos)
+    // Feedback Háptico (vibración suave)
+    if (navigator.vibrate) navigator.vibrate(5);
+    
+    // Activar Modo Foco al interactuar
     if (filteredFlashcards.length > 0) {
         document.querySelector('.header').classList.add('focus-mode');
-        document.querySelector('.search-container').classList.add('focus-mode');
     }
 }
 
@@ -167,6 +169,11 @@ function showCard() {
 
     back.innerHTML = `<div class="card-content" style="width:100%">${contentHtml}</div>`;
 
+    // Animación de entrada suave
+    cardElement.style.animation = 'none';
+    cardElement.offsetHeight; /* Trigger reflow */
+    cardElement.style.animation = 'slideIn 0.3s ease-out';
+
     updateCounter();
 }
 
@@ -203,6 +210,8 @@ function toggleLearned(term) {
         learnedTerms = learnedTerms.filter(t => t !== term);
     } else {
         learnedTerms.push(term);
+        // Feedback Háptico de éxito (vibración doble corta)
+        if (navigator.vibrate) navigator.vibrate([10, 30, 10]);
     }
     localStorage.setItem('learnedTerms', JSON.stringify(learnedTerms));
     showCard();
