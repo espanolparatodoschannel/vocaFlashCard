@@ -106,9 +106,6 @@ function flipCard() {
     if (!card) return;
     card.classList.toggle('flipped');
     
-    // Feedback Háptico (vibración suave)
-    if (navigator.vibrate) navigator.vibrate(5);
-    
     // Activar Modo Foco al interactuar
     if (filteredFlashcards.length > 0) {
         document.querySelector('.header').classList.add('focus-mode');

@@ -137,9 +137,9 @@ body::before {
 }
 
 .filter-btn.active {
-    background: var(--primary);
+    background: var(--surface-container-highest);
+    color: var(--primary); /* El icono resalta sutilmente */
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(192, 193, 255, 0.3);
 }
 
 .header-actions {
