@@ -272,17 +272,7 @@ function renderStats() {
     let recentHtml = recentTerms.map(t => `<span class="recent-tag">${t}</span>`).join('');
 
     statsView.innerHTML = `
-        <div class="mastery-hero">
-            <div class="progress-circle">
-                <svg>
-                    <circle class="bg" cx="80" cy="80" r="70"></circle>
-                    <circle class="bar" cx="80" cy="80" r="70" style="stroke-dashoffset: ${strokeDashoffset}"></circle>
-                </svg>
-                <div class="percentage-text">${percentage}%</div>
-            </div>
-            <div class="stat-label">Maestría Total</div>
-        </div>
-        <div class="stats-grid">
+        <div class="stats-grid" style="margin-top: 20px;">
             <div class="stat-card">
                 <div class="stat-value">${total}</div>
                 <div class="stat-label">Total Vocabulario</div>
