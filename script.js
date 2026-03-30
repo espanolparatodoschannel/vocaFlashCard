@@ -155,7 +155,7 @@ function showCard() {
                 <div class="es-container" style="text-align: center; margin-bottom: 12px;">
                     ${(() => {
                         const esTerm = def["Término en español"];
-                        const match = esTerm.match(/^(.*?)\((.*?)\)$/);
+                        const match = esTerm.match(/^(.*?)\s*\((.*?)\)\s*$/); // Detecta paréntesis al final de forma flexible
                         if (match) {
                             return `
                                 <div class="word-es">${match[1].trim()}</div>

@@ -2134,5 +2134,130 @@
                 "Ejemplo en español": "No olvides guardar tus gafas en su estuche."
             }
         ]
+    },
+    {
+        "Término en francés": "Raturé",
+        "definiciones": [
+            {
+                "Término en español": "Tachado",
+                "Ejemplo en francés": "Ton texte est illisible car il est tout raturé.",
+                "Ejemplo en español": "Tu texto es ilegible porque está todo tachado."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ajouter",
+        "definiciones": [
+            {
+                "Término en español": "Añadir / Agregar",
+                "Ejemplo en francés": "N'oublie pas d'ajouter un peu de sel à la soupe.",
+                "Ejemplo en español": "No olvides añadir un poco de sal a la sopa."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Retirer",
+        "definiciones": [
+            {
+                "Término en español": "Quitar / Retirar",
+                "Ejemplo en francés": "Tu peux retirer tes chaussures avant d'entrer.",
+                "Ejemplo en español": "Puedes quitarte los zapatos antes de entrar."
+            },
+            {
+                "Término en español": "Sacar (dinero)",
+                "Ejemplo en francés": "Je dois m'arrêter à la banque pour retirer de l'argent.",
+                "Ejemplo en español": "Tengo que parar en el banco para sacar dinero."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Remarquer",
+        "definiciones": [
+            {
+                "Término en español": "Notar / Darse cuenta",
+                "Ejemplo en francés": "Est-ce que tu as remarqué son nuevo style ?",
+                "Ejemplo en español": "¿Has notado su nuevo estilo?"
+            }
+        ]
+    },
+    {
+        "Término en francés": "Venir",
+        "definiciones": [
+            {
+                "Término en español": "Venir",
+                "Ejemplo en francés": "Est-ce que tu veux venir au ciné avec nous ce soir ?",
+                "Ejemplo en español": "¿Quieres venir al cine con nosotros esta noche?"
+            }
+        ]
+    },
+    {
+        "Término en francés": "Séance",
+        "definiciones": [
+            {
+                "Término en español": "Sesión / Función",
+                "Ejemplo en francés": "La séance parlementaire finit très tard.",
+                "Ejemplo en español": "La sesión parlamentaria terminó muy tarde.."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Roule",
+        "definiciones": [
+            {
+                "Término en español": "Conducir / Ir (en coche)",
+                "Ejemplo en francés": "Il roule trop vite sur cette route.",
+                "Ejemplo en español": "Él conduce demasiado rápido por esta carretera."
+            },
+            {
+                "Término en español": "Funcionar / Ir bien (coloquial)",
+                "Ejemplo en francés": "Ne t'inquiète pas, tout roule como previsto.",
+                "Ejemplo en español": "No te preocupes, todo va sobre ruedas según lo previsto."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Déguiser",
+        "definiciones": [
+            {
+                "Término en español": "Disfrazar",
+                "Ejemplo en francés": "Elle adore déguiser ses enfants pour le carnaval.",
+                "Ejemplo en español": "A ella le encanta disfrazar a sus hijos para el carnaval."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Goûter",
+        "definiciones": [
+            {
+                "Término en español": "Probar / Saborear",
+                "Ejemplo en francés": "Tu veux goûter ce gâteau ? Il est délicieux.",
+                "Ejemplo en español": "¿Quieres probar este pastel? Está delicioso."
+            },
+            {
+                "Término en español": "Merendar",
+                "Ejemplo en francés": "Les enfants vont goûter después del école.",
+                "Ejemplo en español": "Los niños van a merendar después del colegio."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Se mettre à",
+        "definiciones": [
+            {
+                "Término en español": "Ponerse a / Empezar a",
+                "Ejemplo en francés": "Il faut se mettre à travailler si on veut finir à l'heure.",
+                "Ejemplo en español": "Hay que ponerse a trabajar si queremos terminar a tiempo."
+            }
+        ]
+    },
+    {
+        "Término en francés": "S'est mis à",
+        "definiciones": [
+            {
+                "Término en español": "Se puso a / Empezó a",
+                "Ejemplo en francés": "Soudain, il s'est mis à pleuvoir très fort.",
+                "Ejemplo en español": "De repente, se puso a llover muy fuerte."
+            }
+        ]
     }
 ]
