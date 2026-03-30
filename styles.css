@@ -113,7 +113,6 @@ body::before {
 
 .header.focus-mode {
     opacity: 0.15;
-    pointer-events: none;
 }
 
 .filter-container {
@@ -338,8 +337,9 @@ body::before {
     left: 24px;
     background: var(--primary);
     color: var(--on-primary);
-    border: none; /* Eliminar borde/contorno */
-    outline: none; /* Eliminar outline de focus */
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important; /* Eliminamos sombra por si se confunde con contorno */
     width: 44px;
     height: 44px;
     border-radius: 14px;
@@ -347,7 +347,6 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(192, 193, 255, 0.2);
     z-index: 10;
 }
 
