@@ -335,6 +335,13 @@ body::before {
     margin-bottom: 8px;
 }
 
+.word-infinitive-inline {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--on-surface-variant);
+    opacity: 0.7;
+}
+
 .word-es {
     font-size: 1.5rem;
     font-weight: 800;
@@ -502,20 +509,14 @@ body::before {
     background: linear-gradient(to right, var(--primary-container), var(--primary));
 }
 
-/ *   A N I M A C I O N E S   P R E M I U M   * /   @ k e y f r a m e s   s l i d e I n    {
-       f r o m    {
-           o p a c i t y :    0 ;
-           t r a n s f o r m :    t r a n s l a t e Y ( 2 0 p x )   s c a l e ( 0 . 9 8 ) ;
-           
+/* ANIMACIONES PREMIUM */
+@keyframes slideIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px) scale(0.98); 
     }
-
-       t o    {
-           o p a c i t y :    1 ;
-           t r a n s f o r m :    t r a n s l a t e Y ( 0 )   s c a l e ( 1 ) ;
-           
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
     }
-
-       
 }
-
-     

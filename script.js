@@ -143,11 +143,10 @@ function showCard() {
     lucide.createIcons();
 
     // CARA POSTERIOR (Múltiples definiciones)
-    let contentHtml = `<div class="word-fr-small">${card["Término en francés"]}</div>`;
-    
-    if (card.verbo_infinitivo) {
-        contentHtml += `<div class="word-infinitive">${card.verbo_infinitivo}</div>`;
-    }
+    let verbHtml = card.verbo_infinitivo ? ` <span class="word-infinitive-inline">(${card.verbo_infinitivo})</span>` : '';
+    let contentHtml = `<div class="word-fr-small" style="display:flex; justify-content:center; align-items:center; gap:8px;">
+        ${card["Término en francés"]}${verbHtml}
+    </div>`;
 
     if (card.definiciones && card.definiciones.length > 0) {
         contentHtml += card.definiciones.map(def => `
