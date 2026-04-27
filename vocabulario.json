@@ -2344,5 +2344,155 @@
                 "Ejemplo en español": "Ten cuidado de no estropear mis zapatos nuevos."
             }
         ]
+    },
+    {
+        "Término en francés": "Endommager",
+        "verbo_infinitivo": "Endommager",
+        "categoría": "General",
+        "definiciones": [
+            {
+                "Término en español": "Dañar",
+                "Ejemplo en francés": "La grêle peut endommager la carrosserie de la voiture.",
+                "Ejemplo en español": "El granizo puede dañar la carrocería del coche."
+            },
+            {
+                "Término en español": "Estropear",
+                "Ejemplo en francés": "L'humidité risque d'endommager ces documents importants.",
+                "Ejemplo en español": "La humedad corre el riesgo de estropear estos documentos importantes."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Cela",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Eso / Esto",
+                "Ejemplo en francés": "Cela ne me semble pas correct.",
+                "Ejemplo en español": "Eso no me parece correcto."
+            },
+            {
+                "Término en español": "Aquello",
+                "Ejemplo en francés": "Tout cela appartient au passé.",
+                "Ejemplo en español": "Todo aquello pertenece al pasado."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ranger",
+        "verbo_infinitivo": "Ranger",
+        "categoría": "Vida Diaria",
+        "definiciones": [
+            {
+                "Término en español": "Ordenar",
+                "Ejemplo en francés": "Tu dois ranger ta chambre avant de sortir.",
+                "Ejemplo en español": "Debes ordenar tu habitación antes de salir."
+            },
+            {
+                "Término en español": "Guardar",
+                "Ejemplo en francés": "Je vais ranger les outils dans le garage.",
+                "Ejemplo en español": "Voy a guardar las herramientas en el garaje."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Arranger",
+        "verbo_infinitivo": "Arranger",
+        "categoría": "General",
+        "definiciones": [
+            {
+                "Término en español": "Arreglar / Reparar",
+                "Ejemplo en francés": "Le mécanicien va arranger le moteur.",
+                "Ejemplo en español": "El mecánico va a arreglar el motor."
+            },
+            {
+                "Término en español": "Convenir / Acomodar",
+                "Ejemplo en francés": "Cette heure m'arrange parfaitement.",
+                "Ejemplo en español": "Esta hora me conviene perfectamente."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Dûment",
+        "categoría": "Adverbios",
+        "definiciones": [
+            {
+                "Término en español": "Debidamente",
+                "Ejemplo en francés": "Le contrat a été dûment signé par les deux parties.",
+                "Ejemplo en español": "El contrato ha sido debidamente firmado por ambas partes."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Consomme",
+        "verbo_infinitivo": "Consommer",
+        "categoría": "General",
+        "definiciones": [
+            {
+                "Término en español": "Consume",
+                "Ejemplo en francés": "Cet appareil consomme beaucoup d'énergie.",
+                "Ejemplo en español": "Este aparato consume mucha energía."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Encadre",
+        "verbo_infinitivo": "Encadrer",
+        "categoría": "General",
+        "definiciones": [
+            {
+                "Término en español": "Enmarcar",
+                "Ejemplo en francés": "Il encadre le tableau pour le protéger.",
+                "Ejemplo en español": "Él enmarca el cuadro para protegerlo."
+            },
+            {
+                "Término en español": "Supervisar / Dirigir",
+                "Ejemplo en francés": "Le professeur encadre les étudiants pendant le stage.",
+                "Ejemplo en español": "Le professeur supervisa a los estudiantes durante la pasantía."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Cadre",
+        "categoría": "Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Marco",
+                "Ejemplo en francés": "Elle a acheté un joli cadre pour sa photo de famille.",
+                "Ejemplo en español": "Ella compró un lindo marco para su foto familiar."
+            },
+            {
+                "Término en español": "Entorno / Contexto",
+                "Ejemplo en francés": "Nous travaillons dans un cadre magnifique au bord de la mer.",
+                "Ejemplo en español": "Trabajamos en un entorno magnífico a la orilla del mar."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Celui-là",
+        "categoría": "Conectores y Expresiones",
+        "definiciones": [
+            {
+                "Término en español": "Ese / Aquel",
+                "Ejemplo en francés": "Je préfère celui-là plutôt que celui-ci.",
+                "Ejemplo en español": "Prefiero ese en lugar de este."
+            }
+        ]
+    },
+    {
+        "Término en francés": "Ressort",
+        "categoría": "Sustantivos",
+        "definiciones": [
+            {
+                "Término en español": "Resorte / Muelle",
+                "Ejemplo en francés": "Le ressort de la montre est cassé.",
+                "Ejemplo en español": "El resorte del reloj está roto."
+            },
+            {
+                "Término en español": "Competencia / Jurisdicción",
+                "Ejemplo en francés": "Cette décision n'est pas de mon ressort.",
+                "Ejemplo en español": "Esta decisión no es de mi competencia."
+            }
+        ]
     }
 ]
